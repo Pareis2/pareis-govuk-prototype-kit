@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="#" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+              </div>
+            </div>
+
+
+
+
+            {{ govukTable({
+              caption: "Dates and amounts",
+              firstCellIsHeader: true,
+              head: [
+                {
+                  text: "Date"
+                },
+                {
+                  text: "Client"
+                },
+
+                {
+                  text: "Partner"
+                }
+              ],
+              rows: [
+                [
+                  {
+                    text: "First 6 weeks"
+                  },
+                  {
+                    text: "£109.80 per week"
+                  },
+                  {
+                    text: "£109.80 per week"
+                  }
+
+                ],
+                [
+                  {
+                    text: "Next 33 weeks"
+                  },
+                  {
+                    text: "£109.80 per week"
+                  }
+                ],
+                [
+                  {
+                    text: "Total estimated pay"
+                  },
+                  {
+                    text: "£4,282.20"
+                  }
+                ]
+              ]
+            }) }}
+
+
+            {{ govukButton({
+              text: "Next question",
+              href: "#",
+              classes: "govuk-button--start"
+            }) }}
+
+
+
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}
