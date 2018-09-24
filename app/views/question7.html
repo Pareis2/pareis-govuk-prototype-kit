@@ -11,24 +11,21 @@
     <div class="govuk-grid-column-full">
 
 
-      <form action="question2.html" method="post">
+      <form action="question8.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
                 classes: "govuk-radios--inline",
-                idPrefix: "case-start",
-                name: "case-start",
+                idPrefix: "sixty-or-over",
+                name: "sixty-or-over",
                 fieldset: {
                   legend: {
-                    text: "Are you assessing your clients means for a case started before 1st April 2013?",
+                    text: "7. Is the case about ownership or possession of assets and/or financial provision?",
                     isPageHeading: true,
-                    classes: "govuk-fieldset__legend--xl"
+                    classes: "govuk-fieldset__legend--l"
                   }
-                },
-                hint: {
-                  text: "Check start date of case."
                 },
                 items: [
                   {
@@ -46,7 +43,7 @@
 
             {{ govukButton({
               text: "Next question",
-              href: "question2.html",
+              href: "question8.html",
               classes: "govuk-button--start"
             }) }}
 
