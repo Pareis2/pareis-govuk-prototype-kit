@@ -1,0 +1,160 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="#" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+<h2 class="govuk-heading-l">Results</h2>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+              </div>
+            </div>
+            <p class="govuk-body-l">Client is likely to be <strong>[Placeholder Answer]</strong> for <strong>[Placeholder Answer]</strong> as the Commision will, unless there are exceptional circumstances, exercise the discretion to waive the limits for gross income, disposable income and capital, and suppliers can assume this when considering an application under devolved powers.</p>
+            <p class="govuk-body-l"> </p>
+            <p class="govuk-body-l">There are special rules that apply for pensioners on low income seeking legal funding and we recommend that you view the LSC manual.</p>
+
+                  {% from "table/macro.njk" import govukTable %}
+
+                  {{ govukTable({
+                    caption: "You answered:",
+                    firstCellIsHeader: true,
+                    head: [
+                      {
+                        text: "Question"
+                      },
+                      {
+                        text: "Answer"
+                      }
+                    ],
+                    rows: [
+                      [
+                        {
+                          text: "1. What level of legal help does the client require:"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "2. The client is directly or indirectly in receipt of Income Support, Income Based Jobseeker's Allowance, Income Based Employment and Support Allowance or Guarantee Credit"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "3. Is the client directly or indirectly in receipt of NASS payments (Immigration and Asylum category work only)?"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "4. Does the client have a partner whose means are to be aggregated?"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "5. Is your client or their partner (whose means are to be aggregated) aged 60 or over?"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "6. What is the Case Category:"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "7. Is the case about ownership or possession of assests and/or financial provision?"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "8. Have the clients assets (held in sole name or jointly held) been claimed by the oponent?"
+                        },
+                        {
+                          text: "[Placeholder Answer]"
+                        }
+                      ],
+                      [
+                        {
+                          text: "TOTAL CAPITAL"
+                        },
+                        {
+                          text: "£"
+                        }
+                      ]
+                    ]
+                  }) }}
+
+
+
+            {{ govukButton({
+              text: "Print CW1",
+              href: "#",
+              classes: "govuk-button--start"
+            }) }}
+
+            {{ govukButton({
+              text: "Print CW2",
+              href: "#",
+              classes: "govuk-button--start"
+            }) }}
+
+          {{ govukButton({
+              text: "Print CLSAPPA",
+              href: "#",
+              classes: "govuk-button--start"
+            }) }}
+
+            {{ govukButton({
+              text: "Print CLSM7",
+              href: "#",
+              classes: "govuk-button--start"
+            }) }}
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}

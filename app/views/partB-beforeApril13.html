@@ -1,0 +1,163 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="#" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+<h2 class="govuk-heading-l">PART B: Income</h2>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+              </div>
+            </div>
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <div>
+                  <table class="govuk-table govuk-body govuk-!-margin-bottom-9">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col"> Income includes:</th>
+                        <th class="govuk-table__header" scope="col"> Client</th>
+                        <th class="govuk-table__header" scope="col"> Partner</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"> Gross Earnings<p>Please enter other income except that which counts as disregarded state benefits e.g. child benefit, pensions, maintenance, dividends etc. If you enter each source separately, the calculator will add up totals for you.</p></th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£">
+                          <div class="govuk-!-padding-bottom-1"></div>
+                          <select class="govuk-select" id="sort" name="sort">
+                              <option value="updated" selected>Monthly</option>
+                              <option value="four">Four Weekly</option>
+                              <option value="weekly">weekly</option>
+                            </select>
+                            <div class="govuk-!-padding-bottom-1"></div>
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+                                - Please tick box if client if self-employed.
+                              </label>
+                            </div>
+                        </td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£">
+                          <div class="govuk-!-padding-bottom-1"></div>
+                          <select class="govuk-select" id="sort" name="sort">
+                              <option value="updated" selected>Monthly</option>
+                              <option value="four">Four Weekly</option>
+                              <option value="weekly">weekly</option>
+                            </select>
+                            <div class="govuk-!-padding-bottom-1"></div>
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
+                              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+                                - Please tick box if client if self-employed.
+                              </label>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"> Other income 1 (Montly)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"> Other income 2 (Monthly)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"> Other income 3 (Monthly)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"> Other income 4 (Monthly)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+              <!-- end of table 1 and start of table 2-->
+                  <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Dependants</th>
+                        <td class="govuk-table__cell "></td>
+                        <td class="govuk-table__cell "></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Partner (tick for yes)</th>
+                        <td class="govuk-table__cell "></td>
+                        <td class="govuk-table__cell ">
+                          <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="partner" data-aria-controls="conditional-citizenship-conditional-1">
+                          <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
+                          </label>
+                        </div>
+                       </td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Number of depenants</th>
+                        <td class="govuk-table__cell ">Aged 15 and under</td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"></th>
+                        <td class="govuk-table__cell ">Aged 16 or over</td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+
+
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"  >TOTAL GROSS INCOME </th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"  >TOTAL GROSS INCOME (Client and Partner) </th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+            {{ govukButton({
+              text: "Next question",
+              href: "partC.html",
+              classes: "govuk-button--start"
+            }) }}
+
+
+
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}

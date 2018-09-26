@@ -1,0 +1,2223 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="#" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+              </div>
+            </div>
+
+
+            <table width="90%" cellspacing="0" cellpadding="0" border="1" align="center">
+                <tbody><tr>
+                    <td>
+                      <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                        <tbody><tr>
+                          <!--<td align="right"><img src="images/legal_aid_agency.gif" hspace="4" alt="Legal aid agency logo"></td>-->
+                        </tr>
+                        <tr>
+                        
+                        </tr>
+                      </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                  <td><br>
+
+            	  <blockquote>
+              <h1> CONTROLLED WORK</h1>
+              <h1> Guide to Determining Financial Eligibility for Controlled Work and Family Mediation April 2018</h1>
+              <p><b>CONTENTS</b></p>
+              <dl>
+            	<dt><a href="#2E-001">1. Introduction</a>
+            		<dl>
+            		<dt><a href="#2E-001">1.1 General</a></dt>
+            		</dl>
+            	</dt><dt><a href="#2C_002">2. How is financial eligibility determined*</a>
+            		<dl>
+            		<dt><a href="#2C_002">2.1 General</a></dt>
+            		</dl>
+            	</dt><dt><a href="#2C004">3. Does the client qualify financially?</a>
+            		<dl>
+            		<dt><a href="#2C004">3.1 General</a></dt><dt>
+            		</dt><dt><a href="#2C006">3.2  Contributions for Legal Representation</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_006">4. General Principles of Determination</a>
+            		<dl>
+            		<dt><a href="#2C_006">4.1 Period of Calculation</a></dt>
+            		<dt><a href="#2C_008">4.2 Aggregation of Means</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_010">5. Determining Gross Income</a>
+            		<dl>
+            		<dt><a href="#2C_010">5.1 General</a></dt>
+            		<dt><a href="#2C_011">5.2 Erratic Income (including the self employed)</a></dt>
+            		<dt><a href="#2C_012">5.3 No income cases</a></dt>
+            		<dt><a href="#2C_013">5.4 Disregarded income</a></dt>
+            	</dl></dt>
+            	</dl>
+            	<dt><a href="#2C_010a">6. Determining disposable income  allowances against income (figures are monthly unless otherwise stated)</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_010a">6.1 Dependants allowances</a></dt>
+            		<dt><a href="#2C_015">6.2 Tax and National Insurance</a></dt>
+            		<dt><a href="#2C_016">6.3 Maintenance paid by the client</a></dt>
+            		<dt><a href="#2F_6_4">6.4 Housing Costs</a></dt>
+            		<dt><a href="#2F_6_5">6.5 Employment related expenses and child care expenses</a></dt>
+            		<dt><a href="#2C_019">6.6 Criminal legal aid contributions</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2E-020">7. Determining Disposable Capital</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2F_007">7.1 General</a></dt>
+            		<dt><a href="#2C_021">7.2 The clients share of joint assets when the partner is the opponent or contrary interest exists</a></dt>
+            		<dt><a href="#2C_022">7.3 Subject matter of the dispute</a></dt>
+            		<dt><a href="#2C_024">7.4 Value of property</a></dt>
+            		<dt><a href="#2F_7_5">7.5 Pensioners disregard (Regulation 35)</a></dt>
+            	</dl></dt>
+
+            	<dt><a href="#2C_026">8. Intentional deprivation of resources</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_026">8.1 General</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_027">9. Eligibility of children</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_027">9.1 General</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_028">10. Errors and new information</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_028">10.1 General</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_029">11. Changes in circumstances</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_029">11.1 General</a>
+            	</dt>
+            	</dl>
+            	</dt><dt><a href="#2C_031">12. Evidence of Means</a><a>
+            		</a><dl><a>
+            		</a><dt><a></a><a href="#2C_031">12.1 General</a></dt>
+            		<dt><a href="#2C_031">12.2 Evidence of means</a>
+
+            	</dt>
+            	</dl>
+
+             <a name="2E-001"></a>
+              <h2>1. Introduction</h2>
+            <h3><b>1.1 General</b></h3>
+                    <p><b>1.</b>1.	The following guidance constitutes the Lord
+            Chancellors guidance for determinations in respect of an individuals
+            financial resources, in accordance with Part 1 of the Legal Aid,
+            Sentencing and Punishment of Offenders Act 2012 [the Act], for
+            controlled work and family mediation. As in practice responsibility for
+            financial determinations in respect of an individual for these services
+            has been delegated to providers, this guidance is addressed to providers
+             responsible for processing such cases.</p>
+            		<p><b>2.</b> Responsibility for financial determinations in respect of
+             an individual has been delegated to providers for the following forms
+            of civil legal services:</p>
+            	<blockquote>
+                <p>(a) Legal Help;</p>
+                <p>(b) Help at Court;</p>
+                <p>(c) Help with Family Mediation</p>
+            	<p>(d) Family Mediation</p>
+            	<p>(e) Family Help ( Lower)</p>
+            	<p>(f) Legal Representation for proceedings in:</p>
+            	<br>  <br>
+                <p>(i)	the Health, Education and Social Care Chamber of the
+            First-tier Tribunal under the Mental Health Act 1983 or paragraph 5(2)
+            of the Schedule to the Repatriation of Prisoners Act 1984;</p>
+                <p>(ii)	the Mental Health Review Tribunal for Wales;
+            	</p><p>(iii) the Immigration and Asylum Chamber of the First-tier Tribunal; or</p>
+            	<p>(iv) the Immigration and Asylum Chamber of the Upper Tribunal, in
+            relation to an appeal or review from the Immigration and Asylum Chamber
+            of the First-tier Tribunal;</p>
+            </blockquote>
+                      <p>These forms of civil legal services are all <b>non-contributory</b>
+             i.e. if the client qualifies within the financial limits these services
+             can be provided without payment of a contribution from income or
+            capital.
+                    </p><p>Family Help (Higher) and Legal Representation other than the categories above are <b>not</b> covered in this guidance, as the Director has <b>not</b>
+             delegated responsibility to providers for making the financial
+            determinations for such cases. Providers exercising delegated powers for
+             emergency representation should refer to the detailed guidance provided
+             for certificated work [see Civil Representation - Guide to Determining
+            Financial Eligibility for Certificated Work April 2018].</p>
+                    <p><b>3.</b> The financial limits and method of calculating
+            disposable income and capital for the various forms of civil legal
+            services are fixed in the Civil Legal Aid (Financial Resources and
+            Payment for Services) Regulations 2013 as amended ["the Financial
+            Regulations"]. References to regulations in this guidance are references
+             to the Financial Regulations regulations unless otherwise stated.</p>
+
+              <a name="2E-002"></a>
+              <h2><a name="2C_002"><b>2. How is financial eligibility determined?</b></a></h2>
+               <h3><b>2.1 General</b></h3>
+                    <p><b>1.</b> The basis for making a financial determination is
+            the same across all forms of civil legal services for which the provider
+             is responsible. There are both income and capital limits for each form
+            of civil legal services. These limits are set out in regulations 7 and 8
+             and are summarised <a href="#2C003">in section 3 below</a>).</p>
+                    <p><b>2.</b> Under regulation 5 certain cases are exempt from
+            the requirement to make a determination in respect of the individuals
+            financial resources. This includes legal help in contemplated
+            proceedings or legal representation in proceedings or contemplated
+            proceedings in relation to any matter described in paragraph 5(1)(a) or
+            (b) (mental health and repatriation of prisoners) of Part 1 of Schedule 1
+             to the Act to the extent that the individuals case or application to
+            the Health, Education and Social Care Chamber of the First-tier Tribunal
+             or Mental Health Review Tribunal for Wales under the Mental Health Act
+            1983 or paragraph 5(2) of the Schedule to the Repatriation of Prisoners
+            Act 1984 is, or is to be, the subject of proceedings before the Health,
+            Education and Social Care Chamber of the First-tier Tribunal or Mental
+            Health Review Tribunal for Wales. Refer to the regulation 5 for the full
+             list of exempted cases.</p>
+                    <p><b>3.</b> Unless a case is exempt from financial
+            determination, the provider has, as a first step, to determine the
+            client's financial eligibility on information provided by the client.
+            This should be done on the requisite form provided by the Legal Aid
+            Agency.</p>
+            		<p><b>4.</b> The forms must be completed in full and sufficient
+            information held on file to allow the determination to be audited as
+            necessary. See the 2013 Standard Civil Contract Specification r.3.23).</p>
+            		<p><b>5.</b> Reasonable steps, for instance requesting sight of the
+            latest monthly pay slip (if the client is weekly paid it is best
+            practice to obtain the latest 4 weekly pay slips i.e. to cover the full
+            calculation period), must be taken to verify the information provided by
+             the client. It is good practice to emphasise to clients the importance
+            of giving a full and fair picture when they are applying for funding.
+            The client is required under regulation 13 to provide information
+            necessary to make the financial determination. See 2013 Standard Civil
+            Contract Specification r3.23 and the guidance within s.12 below,
+            regarding evidential requirements.</p>
+                <p><b>6.</b>Point of Principle (PoP) 59 certified by the Cost
+            Appeals Committee confirms that in respect of financial determinations
+            undertaken by providers, in the limited areas where the regulations
+            require the provider to exercise an element of discretion or judgment,
+            an assessor should only overturn a decision that the individual
+            qualifies for services where the provider's decision was "manifestly
+            unreasonable" rather than because they have reached a different, but
+            equally valid, determination in respect of means. This newly certified
+            PoP does not override any mandatory regulatory or contractual provisions
+             relating to the assessment of means, and continues the approach
+            currently applied by the Legal Aid Agency on audit/assessment. Any
+            determination that an individual is financially eligible for legal
+            services must comply with all relevant regulatory and contractual
+            provisions. Providers must apply the Lord Chancellor's Guidance
+            contained herein, in relation to determining financial eligibility on
+            assessment and any determination that an individual qualifies for
+            services which is in direct conflict with this guidance will usually be
+            considered "manifestly unreasonable".</p>
+
+
+            <a name="2C004"></a>
+            <a name="2C003"></a>
+               <h2>3. Does the client qualify financially?</h2>
+                   <h3><b>3.1 General</b></h3>
+                    <p><b>1.</b> Under Regulation 7(4) for all forms of civil legal
+            services the client's gross income must be £2657 per month or less; for
+            clients with more than four child dependants (for whom they receive
+            child benefit) a higher gross income limit applies (see paragraph 6
+            below). If the client's gross income exceeds this level then they are
+            financially ineligible for civil legal aid and the application must be
+            refused.
+            </p>
+            		<p><b>2.</b> A client who is "properly" in receipt, directly or
+            indirectly, of Income Support, Income-Based Jobseeker's Allowance,
+            Income-Related Employment and Support Allowance, Guarantee Credit (under
+             s.1(3)(a) of the State Pension Credit Act 2002) or Universal Credit
+            automatically satisfies the gross income test for all forms of civil
+            legal service. The benefit must be currently in payment (i.e. do not
+            passport if claim is suspended) and the client must be legally entitled
+            to the payment. If it is advised that the client is in receipt of a
+            passporting benefit but there is a clear suspicion that the client is
+            not in fact entitled to the benefit, e.g. the client has indicated that
+            relevant facts such as a partner, employment, sources of income and
+            capital etc. have not been advised to the benefit office, do not
+            passport; carry out a full determination of means and include the state
+            benefit received as income.</p>
+            		<p><b>3.</b> Where an individual who has applied for legal help in a
+            cross-border dispute is properly in receipt (directly or indirectly) of a
+             means-tested benefit or support paid by another EU Member State that is
+             equivalent to a benefit or support listed in regulation 6(2), that
+            individual will be passported on income [Advice must be sought from the
+            Legal Aid Agency in these circumstances to determine if the benefit
+            received is equivalent, this decision is not delegated to providers].</p>
+            		<p><b>4.</b> If the client is directly or indirectly in receipt of
+            payments under s.4 or s.95 of the Immigration and Asylum Act 1999, i.e.
+            NASS support, they qualify automatically on gross income for the forms
+            of civil legal services set out in Regulation 6(1): i.e. Legal Help for
+            matters described in paragraphs 24 to 30 (immigration and asylum) and
+            32(1) (victims of trafficking in human beings) of Part 1 of Schedule 1
+            to the Act, Help at Court and Legal Representation before a) the
+            Immigration and Asylum Chamber of the First-tier Tribunal; and b) the
+            Immigration and Asylum Chamber of the Upper Tribunal, in relation to an
+            appeal or review from the Immigration and Asylum Chamber of the
+            First-tier Tribunal (i.e. Controlled Legal Representation).</p>
+            		<p><b>5.</b> Gross income for this purpose means income under
+            Regulation 21 (see section 5.1 paragraph 6 below) before any deductions
+            are made  apart from those sums disregarded under Regulation 24 (set out
+             in section 5.4 of this guidance) and any housing benefit paid under
+            section 130 of the Social Security Contributions and Benefits Act 1992
+            or section 129 of the Social Security Contributions and Benefits
+            (Northern Ireland) Act 1992. This gross income cap acts as a filter and a
+             client whose gross income is below the relevant cap must then have
+            their disposable income and disposable capital assessed in order to
+            determine financial eligibility for civil legal services. </p>
+            		<p><b>6.</b> The relevant gross income cap can be ascertained by reference to the table below.</p>
+
+                    <table width="90%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <thead>
+                      <tr>
+                        <td align="center">
+                          <p><b>No of dependant Children</b></p>
+                        </td>
+                        <td align="center">
+                          <p><b>Monthly Gross Income Cap from 01.04.13</b></p>
+                        </td>
+                      </tr>
+                      </thead> <tbody>
+                      <tr>
+                        <td align="center">
+                          <p>0 - 4</p>
+                        </td>
+                        <td align="center">
+                          <p>£2657</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>5</p>
+                        </td>
+                        <td align="center">
+                          <p>£2879</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>6</p>
+                        </td>
+                        <td align="center">
+                          <p>£3101</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>7</p>
+                        </td>
+                        <td align="center">
+                          <p>£3323</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>8</p>
+                        </td>
+                        <td align="center">
+                          <p>£3545</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>9+</p>
+                        </td>
+                        <td align="center">
+                          <p>Add £222 per month for each additional child</p>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+            		  <p>For the purpose of the gross income cap only, a child dependant
+            is anyone for whom the client and/or their partner (if client and
+            partners resources are being aggregated) receives Child Benefit.</p>
+                    <p><b>7.</b> Both disposable income and disposable capital must
+            also be within the eligibility limits in force at the time the
+            application form is signed. Disposable income and capital refer to the
+            income and capital after prescribed allowances and disregards have been
+            applied. If either disposable income or capital are above the limits,
+            the client will not be eligible for civil legal aid and the application
+            must be refused. </p>
+                   <a name="2C003q3"></a> <p><b>8.</b> A client who is properly in
+            receipt, directly or indirectly,  of Income Support, Income-Based
+            Jobseeker's allowance, Income-Related Employment and Support Allowance,
+            Guarantee Credit or Universal Credit automatically satisfies the
+            disposable income test for all forms of civil legal services. A client
+            who is  properly in receipt, directly or indirectly, of payments under
+            s.4 or s.95 of the Immigration and Asylum Act 1999, i.e. NASS support,
+            will automatically be financially eligible for the forms of civil legal
+            services set out in Regulation 6(1) for asylum and immigration matters
+            (as outlined in paragraph 4 above).</p>
+
+            <a name="2E-005"></a>
+            <a name="2C005"></a>
+            		<p><b>9.</b> The relevant financial limits and passporting arrangements for controlled work and family mediation are set out below:</p>
+              <table width="80%" cellspacing="0" cellpadding="2" border="1" align="center">
+                <thead>
+            	<tr>
+                  <td width="15%" align="center"><p><b>Level of Service</b></p></td>
+                  <td width="15%" align="center"><p><b>Income Limit</b></p></td>
+                  <td width="15%" align="center"><p><b>Capital Limit</b></p></td>
+            	  <td width="35%" align="center"><p><b>Passporting Arrangements</b></p></td>
+                </tr>
+            	</thead>
+            	<tbody>
+                <tr>
+                  <td valign="top">
+                    <p>Legal Help;</p>
+            		<p>Help at Court;</p>
+            		<p>Family Help (Lower);</p>
+            		<p>Help with Family Mediation;</p>
+            		<p>Family Mediation;</p>
+            		<p>Legal Representation.</p>
+            	      </td>
+                  <td valign="top">
+                          <p>Gross income not to exceed £2,657 per month*</p>
+            			  <br>
+            			  <p>Disposable income not to exceed £733 per month</p>
+
+                  </td>
+                  <td valign="top">
+            	    <p>Disposable capital not to exceed £3,000 [Legal Representation in respect of an immigration matters set out in Regulation 8(3)].</p>
+                    <p>Disposable capital not to exceed £8,000 [all other forms of civil legal services].</p>
+                  </td>
+            	  <td valign="top">
+                    <p>Passported through the gross income and disposable income test if in receipt of:</p>
+                    <ul><li>Income Support, </li>
+                      <li>Income-Based Job Seeker's Allowance, </li>
+                      <li>Income-Related Employment and Support Allowance, </li>
+                      <li>Guarantee Credit or </li>
+                      <li>Universal Credit</li>
+                    </ul>
+            		<p>Income Support, Income-Based Job Seeker's Allowance, Income-Related
+             Employment and Support Allowance, Guarantee Credit or Universal Credit</p>
+                    <p><b>Capital must be assessed in all cases.**</b></p>
+            		<p><b>**[For controlled work asylum and immigration matters only:</b>
+            for matters described in regulation 6(1) of the Financial Regulations:
+            clients in receipt of NASS support are passported through both the
+            income and capital test].</p><p>
+                  </p></td>
+                </tr>
+            	</tbody>
+              </table>
+              <p>* Additional gross income cap for those with more than 4 dependant children (see separate table at section 3.1 paragraph 2).</p>
+            <p><a name="2E-006"></a>
+              <a name="2C006"></a>        </p>
+            <h3><b>3.2 Contributions for Legal Aid</b></h3>
+                    <p><b>1.</b> Controlled work and family mediation are
+            non-contributory forms of civil legal services. Guidance on how to
+            calculate contributions for Family Help (Higher) and Legal
+            Representation other than the categories covered by this guidance, is
+            provided separately in the guidance for certificated work.</p>
+            <p><a name="2E-007"></a>
+            	<a name="2C_006"></a>  </p>
+            <h2>4. General Principles of a Financial Determination</h2>
+                    <h3><b>4.1 Period of Calculation</b></h3>
+                    <p><b>1.</b> The period of calculation when determining income
+            is the calendar month up to and including the date of the application
+            for civil legal services (see regulation 14).
+            For example, if the application is made on December 8 then the period of
+             calculation will commence on November 9. In practical terms when
+            income/allowances do not vary month on month then the relative amounts
+            can be taken by reference to the most recent payment, i.e. the most
+            recent monthly wage; where weekly pay slips provided by the client show
+            that a consistent amount is paid, the calculation can be based on the
+            latest pay slip..
+            </p>
+            <p><b>2</b>	The calculation period may be varied to an equivalent period
+             of a calendar month only in the circumstances set out in paragraphs
+            5.2.7 and 5.3.1 below.
+              <a name="2E-008"></a>        </p>
+            <h3><a name="2C_008">
+              <b>4.2 Aggregation of Means</b></a></h3>
+                    <p><b>1.</b> Regulation 16 contains a general provision that the
+             resources of the clients partner must be taken into account and added
+            to those of the client. Partner is defined as:</p>
+            		<p> (i) an individual's spouse or civil partner, from whom the
+            individual is not separated due to a breakdown in the relationship which
+             is likely to be permanent;</p>
+            		<p> (ii) a person with whom the individual lives as a couple; or</p>
+            		<p> (iii) a person with whom the individual ordinarily lives as a
+            couple, from whom they are not separated due to a breakdown in the
+            relationship which is likely to be permanent;</p>
+            		<p><b>2.</b> This means that there must be a breakdown in the
+            relationship that is likely to be permanent (i.e. at least one of the
+            parties considers the relationship to be at an end) rather than mere
+            physical separation if the partners' means are not to be aggregated.
+            Therefore a couple who is physically separated owing to financial or
+            practical reasons, e.g. job location or the fact that one of the parties
+             is in prison, hospital, residential care etc must be aggregated.</p>
+                    <p><b>3.</b> In asylum cases, there may be occasions where the
+            client is physically separated from their partner due to the partner
+            still being abroad, but the relationship is still intact. In such cases
+            the normal rules of aggregation still apply and the client and their
+            partner will still be treated as a couple for aggregation purposes.
+            However in such cases it may be necessary to consider whether the assets
+             and income of the partner, together with any of the client's assets
+            that have been left behind, are currently truly "disposable" as far as
+            the client is currently concerned. In such cases the provider should
+            make reasonable enquiries of the client to determine to what extent that
+             income and those assets are available. If it is decided in an
+            individual case that the partners income and assets are not available
+            to the client and therefore excluded from the assessment then it would
+            not be appropriate to make any dependants allowance for the partner
+            (see section 6 below).</p>
+            		<p><b>4.</b> Where it is advised that a couple are married according
+            to English law but are not planning to live together until they have
+            undergone their traditional cultural ceremony, you must  aggregate their
+             resources in the assessment. This is a change to our previous guidance.
+             </p>
+            		<p><b>5.</b> Although in general a former couple who are permanently
+            separated due to the breakdown of their relationship will usually live
+            in separate properties, this may not always be the case. It is possible
+            for former partners to live separate and apart in the same property.
+            This would be the case if they regarded their relationship as at an end
+            but remained living in the same property simply waiting for the property
+             to be sold before going their separate ways.
+                      <a name="2E-009"></a>
+                      <a name="2C_009"></a>        </p>
+            		<p><b>6.</b> In addition for unmarried couples, although not
+            conclusive it would be usual for there to be some evidence of a pooling
+            of financial resources and they must regard themselves as a couple. It
+            would not be appropriate to aggregate the resources of say a brother and
+             sister, or flatmates who are not living as a couple. Further evidence
+            of living as a couple may include joint care of a child of the couple.</p>
+                    <p><b>7.</b> However, there is an important exception to this
+            rule and means are not aggregated where the partner has a contrary
+            interest in the matter in respect of which the client is seeking legal
+            aid.</p>
+            		<p>Contrary interest in the most obvious sense will mean that the
+            partner is the opponent or potential opponent in proceedings. However,
+            this will not necessarily be the case  the client and their partner
+            could in theory have a contrary interest in a claim made by a third
+            party, such as in the case of a mortgagee seeking possession where undue
+             influence by the partner may be a defence.</p>
+            		<p>In disputes between divorcing or separating couples, whether as to
+            children or property, one partner will by definition have a contrary
+            interest to the other. However, if a client has left his or her spouse
+            and has gone to live with a new partner as a couple in the same
+            household, then the means of the new partner should be aggregated with
+            those of the client.
+                      <a name="2E-010"></a>        </p>
+            		<h2><a name="2C_010">5. Determining Gross Income</a></h2>
+                    <h3><b>5.1 General</b></h3>
+                   <p><b>1.</b> If the client is properly in receipt (directly or
+            indirectly) of Income support, Income-Based Jobseekers Allowance,
+            Income-Related Employment and Support Allowance, Guarantee Credit (under
+             section 1(3)(a) of the State Pension Credit Act 2002(a) or Universal
+            Credit, they qualify automatically on income (by virtue of reg 46(2) for
+             all forms of civil legal services. If the client is in receipt
+            (directly or indirectly) of payments under Section 4 or 95 of the
+            Immigration and Asylum Act 1999  i.e. NASS support  they qualify
+            automatically on income for the forms of civil legal services set out in
+             Regulation 6(1) for asylum and immigration matters: Legal Help, Help at
+             Court and Controlled Legal Representation. All of these passporting
+            arrangements are set out in Regulation 6.</p>
+            	   <p><b>2.</b> 	A client is directly in receipt of passporting
+            benefit, and therefore deemed eligible  on income (however capital must
+            be assessed), if he or she is the benefit claimant. A client is
+            indirectly in receipt of passporting benefit if he or she is included
+            in the benefit claim of someone else i.e. their partner (or in the case
+            of a child included in their parents/guardians claim); the client is
+            therefore deemed eligible on income if his or her partner is in receipt
+            of a passporting benefit and the client is included in that benefit
+            claim. Since December 2005 same-sex couples have been recognised by the
+            Dept for Work and Pensions and paid for as a couple rather than as two
+            single people; passporting arrangements will therefore apply to civil
+            partners, married and cohabiting couples (including couples of the same
+            sex).</p>
+                   <p><b>3.</b> Where the client is not included in their partners
+            benefit claim (e.g. if the client is in prison, his or her partners
+            benefit claim will not include a payment for the client) then the client
+             is not passported for civil legal services. In such cases the clients
+            means should be determined and the partners benefit payment (e.g.
+            Income Support, Income-Based Jobseekers Allowance etc) included in the
+            determination as a source of income for the couple.</p>
+            	   <p><b>4.</b> Other tax credits and state benefits e.g. Working Tax
+            Credit and Child Tax Credits are not passporting benefits. In such cases
+             the client's means should be assessed and the benefit or tax credit
+            amount received each week must be included in the determination as a
+            source of income (unless exempted - see section 5.4).</p>
+            	   <p><b>5.</b> Clients in receipt of the passporting benefits in
+            paragraph 1 (except for NASS support) will also satisfy the disposable
+            income limit for the  forms of civil legal services specified above, but
+             capital will need to be assessed to determine whether they are
+            eligible. </p>
+                   <p><b>6.</b> Under Regulation 21 income for the calculation period means:</p>
+            	   <p> (i) the gross amount the individual has earned, or will earn;</p>
+            	   <p> (ii) the gross amount of any entitlements that have accrued, or will accrue, to the individual; and</p>
+            	   <p> (iii) any other gross sums from any source which the individual has received, or is likely to receive,</p>
+            	   <p> in cash or in kind in respect of the calendar month up to and
+            including the date of the application for funding. In determining gross
+            income all income must be included whether from employment, state
+            benefits or elsewhere, e.g. assistance from friends or relatives (unless
+             exempted: see section 5.4.).</p>
+                   <p><b>7.</b> Any payments made direct to third parties on behalf
+            of the client will count as the clients gross income by virtue of
+            Regulation 16(5)(b) of the Regulations 2000. This could be for example
+            payments made by an ex-partner as maintenance direct to a third party on
+             behalf of the client e.g. ex-partner pays the mortgage on the former
+            matrimonial home direct to the lender. When determining disposable
+            income the relevant mortgage payment should be allowed against income as
+             a housing cost in accordance with the rules for that particular
+            allowance.
+            </p>
+                    <p><b>8.</b> To calculate calendar monthly income, multiply by
+            52 and divide by 12 if payment is weekly and multiply by 13 and divide
+            by 12 if payment is four weekly. Note: where a monthly amount is stated
+            for state benefits and tax credits, this will in fact be a 4- weekly
+            payment that will need to be adjusted to represent a calendar monthly
+            figure. Universal Credit payments however are paid for a calendar month.</p>
+                    <p> <a name="2E-011"></a>
+                      <a name="2C_011"></a>	    </p>
+                    <h3><b>5.2	Erratic Income (including the self employed)</b></h3>
+            		<p><b>1.</b> Where a clients income is erratic (because of bonuses,
+            commission, nature of employment or payment etc.) they may be ineligible
+             for funding one month, but eligible the next as the calculation is
+            based on the calendar month prior to the application. Where a client has
+             received an annual bonus in the period of calculation then this should
+            be treated as capital.</p>
+            		<p><b>2.</b> As long as there is no question of the client having
+            deprived themselves of income (see section 8 below) with a view to
+            qualifying, then there would be nothing to stop them from delaying their
+             application for funding until the next month. In these situations, the
+            client should be made aware of the basis of the assessment and the
+            effect of good/bad months. It will be for the client to decide if they
+            wish to proceed immediately on a private fee paying basis if on the
+            previous months income they are ineligible.</p>
+            		<p><b>3.</b> It is important to remember that this situation differs
+            from deprivation of income or capital (see section 8 below). This is not
+             allowed and the resources which have been disposed of must still be
+            taken into account in the assessment.</p><p>
+            		</p><p><b>4.</b>The income that should be taken into account should
+            include any that is due or will become due for the period of
+            calculation. If a client has become entitled to money in the previous
+            month which he has not yet received (e.g. he has earned a commission),
+            then that income too must be included in the assessment.</p>
+            		<p><b>5.</b> In relation to parental contributions to students,
+            student grants (this will therefore include bursaries) and student loans
+             these should be treated as income by taking the annual payment or
+            contribution obtained by the student and dividing by 12.</p>
+            		<p><b>6.</b>In the case of a self employed client, it is the level of
+            drawings taken from the business for personal use which will count as
+            the clients income. There are no special deductions for the
+            self-employed. If no drawings have been taken in the last month, or the
+            most recent months drawings appear low, then consideration should be
+            given as to whether the client is attempting to deliberately reduce his
+            or her income for the purpose of qualifying for civil legal services. In
+             such cases the normal monthly drawings should be established and
+            included in the determination invoking the deprivation rule (see s.8).
+            If the client states that they have not taken any drawings from the
+            business for their personal use e.g. because it is a new business then
+            enquiries should be made of the client to determine how they have met
+            their day to day living costs during the relevant period. Any income or
+            assistance that has been made available to the client from other
+            sources, e.g. assistance from friends or relatives with bills, should be
+             treated as income and included in the determination</p>
+                    <p><b>7.</b> 	If the client reports that they are to start a new
+             job within the month following the date of the application for
+            controlled work or family mediation, and the gross amount that the
+            client will earn means that the client will not be eligible for civil
+            legal services (i.e. earnings will exceed the gross income limit, or
+            after relevant deductions are made income exceeds the disposable
+            income), it will be appropriate to base the determination on what the
+            client is to receive in the next calendar month and therefore to refuse
+            the application. </p>
+
+             <a name="2C_012"></a>
+             <a name="2E-012"></a>
+            <h3><b>5.3	"No income" cases</b></h3>
+            		<p><b>1.</b> Situations may arise, especially in the
+            family/matrimonial context, where a client has not received or become
+            entitled to any direct income at all in the preceding month. This may be
+             the case where the client is living separate and apart from their
+            spouse in the same home, with the client not being employed but the
+            spouse still meeting all outgoings. In some cases particularly where the
+             change occurred during the past month it might not be appropriate to
+            base the determination on the income received for the whole of the
+            previous month. In such cases an estimate should be made of what the
+            client is likely to receive in the next calendar month based on the
+            income received since the change took place. In these circumstances the
+            client can be assessed as having no income. If, however, the client is
+            receiving money from the partner, or a friend to pay bills or as
+            maintenance, this must be shown as income.</p>
+            <p>&nbsp;</p>
+            <a name="2E-013"></a>
+             <h3><a name="2C_013">
+             <b>5.4 Disregarded income</b></a></h3>
+                    <p><b>1.</b> Certain state benefits are disregarded when
+            determining gross income or disposable income (Regulation 24(1)). The
+            disregarded benefits are:</p>
+              <blockquote>
+                      <p> (a) The following payments under the Social Security
+            Contributions and Benefits Act 1992 (or the Social Security
+            Contributions and Benefits ( Northern Ireland) Act 1992) namely:</p>
+                      <blockquote>
+                        <p>(i) Disability living allowance;<br>
+                          (ii) Attendance allowance;<br>
+                          (iii) Constant attendance allowance paid as an increase
+                          to disability pension;<br>
+            			  (iv) Any payment made out of the social fund; and<br>
+                          (v) Carer's Allowance; and<br>
+
+                        </p>
+                </blockquote>
+                      <p>(b) Community Care and Special Educational Needs direct
+            payments i.e. any direct payments made under section 49(3) of the
+            Children and Families Act 2014 (personal budgets and direct payments),
+            sections 31 to 32 of the Care Act 2014 (direct payments), section 57(1)
+            of the Health and Social Care Act 2001 (direct payments), section 17A of
+             the Children Act 1989 (direct payments) or section 8(1) of the Carers
+            and Direct Payments Act (Northern Ireland) 2002;</p>
+                      <p>(c) So much of any back to work bonus received under
+            Section 26 of the Jobseekers Act 1995 as is by virtue of that section to
+             be treated as payable by way of jobseekers allowance ;</p>
+            		  <p>(d) Severe Disablement Allowance paid under the Social Security
+            Contributions and Benefits Act 1992 (or the Social Security
+            Contributions and Benefits (Northern Ireland) Act 1992);</p>
+                      <p>(e) Exceptionally Severe Disablement Allowance paid under the Personal Injuries (Civilians) (Amendment) Scheme 1983;</p>
+                      <p>(f) Any pensions paid under the Naval, Military, Air Forces etc (Disability &amp; Death) Service Pensions Order 2006(c);</p>
+                      <p>(g) To the extent that it exceeds the relevant dependants
+            allowance made under regulation 25(2)(b), any financial support paid
+            under any agreement for the care of a foster child; and</p>
+            		  <p>(h) Any payment made out of the Independent Living Fund (2006) or or out of the Welsh Independent Living Grant; </p>
+            		  <p>(i) Any personal independence payment paid under the Welfare
+            Reform Act 2012 or Part 5 of the 2015 (Northern Ireland) Order, and
+            Armed Forces Independence Payment;</p>
+                  <p>(j) Payments on Account of Benefits and Budget Advances made
+            under Part 2 or 3 of the Social Security (Payment on Account of Benefit)
+             Regulations 2013 or Part 2 or 3 of the Social Security (Payments on
+            Account of Benefit) Regulations (Northern Ireland) 2016; and </p>
+                  <p>(k) Transfer Advances of Universal Credit paid under regulation
+             17 of the Universal Credit (Transitional Provisions) Regulations 2014
+            or regulation 17 of the Universal Credit (Transitional Provisions)
+            Regulations (Northern Ireland) 2016.</p>
+
+              </blockquote>
+              <blockquote>
+            		<p><b>2.</b>Where an individual who has applied for legal help in a
+            cross-border dispute is properly in receipt (directly or indirectly) of a
+             means-tested benefit or support paid by another EU Member State that is
+             equivalent to a benefit or support listed in regulation 24(1), the
+            benefit will be disregarded.[Advice must be sought from the Legal Aid
+            Agency in these circumstances to determine if the benefit received is
+            equivalent, this decision is not delegated to providers].</p>
+              </blockquote><blockquote>
+                <p><b>3.</b>
+                Providers, as part of their delegated responsibility, may exercise
+            discretion provided by Regulation 24(3) to disregard a payment which
+            meets all of the following conditions:</p><p>
+                  </p><p>(a) the payment was made to an individual who is a victim of the fire at Grenfell Tower</p>
+                  <p>(b) the payment was made to that individual because the individual was a victim of the fire at Grenfell Tower</p>
+                  <p>(c) the payment was not made directly to the individual by an individual known personally to the individual </p>
+                   </blockquote>
+
+
+               <p>&nbsp;</p>
+               <a name="2F_006"></a>
+                    <h2><a name="2C_010a">
+            		</a>6. Determining disposable income - allowances against income<br>(figures are monthly unless otherwise stated)</h2>
+                    <h3><b>6.1 Dependants' allowances</b></h3>
+             		<p><b>1.</b> In determining disposable income the following
+            deductions can be made in respect of the clients dependants (Regulation
+             25) from 9 April 2018:</p>
+                    <p>£181.41 is allowed against income if the applicant has a
+            partner (see partner definition in section 4.2). Note this allowance
+            applies regardless of whether there is a contrary interest between the
+            client and partner in respect of the claim provided their relationship
+            hasn't permanently broken down (such as in a case where the couple have a
+             contrary interest in respect of a third party mortgagee seeking
+            possession of their property but remain together); but the deduction
+            should not be made in disputes between divorcing or separating couples.
+            If the client is living with a new partner with whom you have aggregated
+             their means, the deduction should be given in respect of the new
+            partner.</p>
+                    <p>£290.70 is allowed for each dependent child (including a
+            foster child) or dependent relative of the applicant who is living in
+            the same household and is aged 15 or under.(at the beginning of the
+            period of calculation).</p>
+                    <p>£290.70 is allowed for each such dependant aged 16 or over.</p>
+                    <p><b>2.</b> Any allowance for a dependent child/relative aged
+            15 or under, or aged 16 or over, will be reduced by the amount of any
+            independent income or benefit the relative may receive. Where the
+            dependant child's/relatives income exceeds the amount of the allowance
+            no deduction will be made, but the excess income will not be included in
+             the determination as the client's income. An allowance must not be made
+             if the relative's capital is over £8,000.</p>
+            		<p><b>3.</b> It would be normal to assume (unless information is given
+             to the contrary) that a child under sixteen would not have any income
+            but children over that age who are in full-time education or training
+            may for example be receiving a grant or student loan, or a wage from an
+            apprenticeship</p>
+            		<p><b>4.</b> Where a financial determination is carried out for a
+            client who has separated from the other parent of the child, you must
+            determine whether the deduction for a child dependant can be made (the
+            deduction cannot be applied to both parents, even where residence is
+            shared). Generally the deduction is made where the child lives in the
+            client's household and the client appears to be the main carer of the
+            child; the main carer is usually the person who receives child benefit
+            for that child, but this may not always be the case. If no one with
+            parental responsibility has claimed child benefit, the allowance will be
+             granted if the child lives with the client and the client appears to be
+             supporting the child from their money. (Note, if the dependants
+            allowance does not apply, a deduction can be made for maintenance paid
+            for the child see section 6.3)</p>
+
+            <a name="2E_015"></a>
+            <a name="2C_015"></a>
+            		<h3><b>6.2 Tax and National Insurance</b></h3>
+                    <p><b>1.</b> The following sums should be deducted from total income (under Regulation 23) when
+                      calculating the disposable income for the calendar month:</p>
+                    <blockquote>
+                      <p>(a) Any income tax paid on that income. For the self
+            employed, a notional income tax figure should be based on 1/12th of the
+            clients income tax liability for the preceding year (i.e. of their last
+             income tax bill). If the client either does not have the information
+            (e.g. because they have not submitted any returns), or because no such
+            payments have been assessed yet e.g. new business, then no allowance
+            should be made.</p>
+                      <p>(b) Any National Insurance contributions paid on that
+            income under Part I of the Social Security (Contributions) Act 1992. For
+             the self employed, a deduction of £12.78 per month can be
+                        made for National Insurance contributions (the class 2
+            payment).</p>
+            </blockquote>
+
+            <a name="2E_016"></a>
+            <a name="2C_016"></a>
+                    <h3><b>6.3 Maintenance paid by the client</b></h3>
+                    <p><b>1.</b> In calculating disposable income an allowance can
+            be made for maintenance payments to a former partner (including a spouse
+             from whom the client has permanently separated), a child or relative,
+            who is not in any such case a member of the household of the client
+            (regulation 26). An allowance can be made whether the payments are being
+             made under a court order, CSA ruling or voluntary agreement. Only
+            payments actually made can be taken into account. This allowance should
+            be the expenditure incurred during the month of calculation. In theory
+            there are no set limits to the amount that can be allowed under this
+            heading but evidence of payments should be sought where the amount
+            claimed appears unreasonable. Maintenance payments could include simply
+            paying an ex-partners household bills or mortgage.</p>
+
+            <a name="2E_017"></a>
+            		<a name="2F_6_4"></a>
+                    <h3><a name="2C_014"><b>6.4 Housing Costs</b></a></h3>
+                    <p><b>1.</b> In calculating disposable income an allowance can
+            be made in respect of mortgage or rent payable for the period of
+            calculation in respect of the clients main dwelling (regulation 28).
+            The amount allowed must be net of housing benefit i.e. the amount
+            payable as per the tenancy agreement minus the amount met by housing
+            benefit.</p>
+            		<p><b>2.</b> For clients with no dependants living in their household
+            i.e. where no dependants' allowances have been made (see section 6.2
+            above) the maximum monthly allowance in this respect will be £545. No
+            excess over the amount can be allowed. Where any dependants allowance(s)
+             have been made then the rent or mortgage repayments can be allowed in
+            full.</p>
+            		<p><b>3.</b> The amount to be allowed in the determination is the
+            monthly rent or mortgage payable. In practical terms it will not be easy
+             to identify separately arrears of mortgage payments, as the client will
+             generally declare these as a single revised monthly mortgage payment.
+            If the client has already come to an arrangement to pay off arrears by
+            increasing their monthly rent or mortgage payment, then, provided those
+            increased payments are actually being paid by the client, that increased
+             rent or mortgage payment can be treated as the monthly rent or mortgage
+             payable in the determination. This is different from a situation
+            whereby a client has commenced paying off arrears in order to reduce
+            their disposable income with a view to qualifying for funding. Such a
+            situation would be regarded as intentional deprivation of income and
+            only the normal monthly rent or mortgage payments should be allowed in
+            the determination in such circumstances.</p>
+            		<p><b>4.</b> Mortgage repayments include the monthly premiums of any
+            lined life insurance/endowment policies, PEPs, or other instruments
+            which will be used to repay the capital sum borrowed.</p>
+            		<p><b>5.</b> Council Tax, water rates, insurance premiums and other
+            associated housing costs are not allowable deductions in the
+            determination. If there is a clearly identifiable amount relating to
+            water rates included in the rent payable by the client then these should
+             not be included as rent. However it is not necessary for suppliers to
+            routinely seek clarification as to whether or not the rent declared by
+            the client includes a sum for water rates.
+            		</p>
+                    <p><b>6.</b> Where a client indicates they are paying board and
+            lodging then only the amount in respect of accommodation can be allowed.
+             In those cases where informal arrangements exist, for example lodging
+            with a close family member, and therefore the amount in respect of
+            accommodation cannot be specified by the client then it should be
+            assumed that 50% of the declared board and lodging element is for
+            accommodation, the remainder is assumed to be for food and other
+            incidentals which do not have a separate allowance under the
+            regulations.</p>
+                    <p><b>7.</b> Where the client states expenditure on housing
+            costs which is more than one third of their gross income then
+            documentary evidence (e.g. copy of bank statement, mortgage statement,
+            or rent book) to support the figures stated should be obtained.</p>
+            <p><a name="2E_018"></a>
+            		  <a name="2F_6_5"></a>        </p>
+            <h3><a name="2C_015"><b>6.5 Employment related expenses and child care expenses</b></a></h3>
+                    <p><b>1.</b> Where the client or partner is assessed as
+            receiving a wage or salary from employment i.e. not the self employed, a
+             deduction of £45 for work related expenses must be made in respect of
+            each person so assessed. This is a set figure within Regulation 27, and
+            it is therefore unnecessary to obtain details of actual expenses, but
+            see also childcare expenses below.</p>
+            		   <a name="2F_6_5_2"></a>
+                    <p><b>2.</b>Where a client or their partner is assessed as
+            receiving a wage or salary from employment or an income from self
+            employment or study-related income (i.e. student loan, student grant or
+            other income received from a person who is not their partner or relative
+             for the purpose of supporting the individual’s course of study ), a
+            deduction can be made in respect of actual monthly expenditure on child
+            care incurred as a result of that person’s absence from home by reason
+            of his employment/self employment/course of study.</p>
+            		<p><b>3.</b>Unless there are exceptional circumstances e.g. disability
+             of the child, it would only be reasonable to make such a deduction in
+            respect of a child dependant aged 15 or under. It would also be
+            unreasonable to make such an allowance where one or other of a couple
+            was available to look after that child.</p>
+            		<p><b>4.</b>Where the client states expenditure on child care which is
+             more than £600 per month for someone working or studying full time (pro
+             rata for part-time work or study) then documentary evidence (e.g. copy
+            of bank statement, copy of agreement/contract with child care provider)
+            to support the figures stated should be obtained. As long as evidence is
+             obtained he full sum can be deducted.</p>
+            		<p><b>5.</b> Where it is accepted in accordance with the criteria
+            above that the clients (and where applicable, partners) circumstances
+            are such that a deduction for child care costs is appropriate, the
+            deduction shall be made once per determination (i.e. to avoid
+            double-counting the costs).</p>
+               <p><a name="2E-019"></a>
+                 <a name="2C_019"></a>   </p>
+               <h3><b>6.6 Criminal Legal Aid Contributions</b></h3>
+            		<p><b>1.</b> 	Any assessed monthly contribution from income that is
+            payable under a criminal legal aid income contribution order (ICO) under
+             the Criminal Legal Aid (Contribution Orders) Regulations 2013 can be
+            disregarded under Regulation 29. If the Director has decided that the
+            client must pay a contribution from income towards the costs of their
+            representation in the Crown Court, this will usually be a monthly
+            payment for a period of 6 months and if monthly contributions are paid
+            promptly the last payment will be dropped so that only 5 months'
+            instalments are required. However, further payments can be imposed under
+             the Criminal Legal Aid (Contribution Orders) Regulations 2013 if upon
+            reassessment it is found that the ICO should have been for a greater
+            amount or the individual should have had an ICO but one was not imposed.
+             These payments can be imposed following a reassessment of income, which
+             can take place up until the point when the assessment of final defence
+            costs is completed.</p>
+            		<p><b>2.</b>Where a deduction has been made for contributions payable
+            under an ICO in making a financial determination,, a further
+            determination may be required when such payments have ceased. (See s.11
+            for guidance as to when further determinations are necessary).</p>
+
+            <p><b>3.</b>If it appears that the client has made the final monthly
+            payment under an ICO in the month leading up to the date of the
+            application for civil legal services, so that no further contribution is
+             due under the ICO, do not make an allowance for the income contribution
+             within the financial determination; in that respect the financial
+            determination will be based on the clients changed circumstances for
+            the month following the date of the application.</p>
+            <a name="2E-020"></a><a name="2F_007"></a>
+                <h2><a name="2C_016">7. Determining Disposable Capital</a></h2>
+                 	<h3><b>7.1 General</b></h3>
+                    <p><b>1.</b> For all forms of civil legal services properly in
+            receipt (directly or indirectly) of Income Support, Income-Based
+            Jobseeker's Allowance, Income-Related Employment and Support Allowance.
+            Guarantee Credit or Universal Credit will require a determination of
+            capital they <b> not</b> qualify automatically on capital. This is a
+            change to the position under the Community Legal Service (Financial)
+            Regulations 2000. However, if the client is directly or indirectly in
+            receipt of payments under Section 4 or 95 of the Immigration and Asylum
+            Act 1999 - i.e. NASS support, he or she will qualify automatically on
+            capital for the forms of civil legal services for asylum and immigration
+             matters set out in Regulation 6(1): Legal Help, Help at Court and
+            Controlled Legal Representation.</p>
+                    <p><b>2.</b> "Capital" means the amount or value of every
+            resource of a capital nature, including all savings and any other
+            capital assets (other than the exceptions listed below). Capital derived
+             from a bank loan or borrowing facilities that a client has accessed-
+            must be taken into account. There are special rules about assessing the
+            value of the clients dwelling which are set out below.</p>
+                    <p><b>3.</b> The only items of capital which are not taken into account are the following:</p>
+            <blockquote>
+              <p>(a) household furniture and effects (unless of exceptional value);<br>
+                (b) clothes;<br>
+                (c) tools and implements of trade;<br>
+                (d) so much of any back to work bonus received under Section 26 of
+            the Jobseekers Act 1995 as is by virtue of that section to be treated as
+             payable by way of jobseekers' Allowance;<br>
+                (e) Payments that are
+                    (i) Social fund payments under the Social Security Contributions
+             and Benefits Act 1992 or the Social Security Contributions and Benefits
+             (Northern Ireland) Act 1992 or <br>
+                    (ii) any arrears of payments made under section 17A of the
+            Children Act 1989 (direct payments), section 49(3) of the Children and
+            Families Act 2014 (personal budgets and direct payments) or the
+            Community Care (Direct Payments) Act 1996 or sections 31 to  32 of the
+            Care Act 2014 (direct payments) or under section 57 of the Health and
+            Social Care Act 2001 (direct payments);<br>
+                    (iii) Payments on Account of Benefits and Budget Advances made
+            under Part 2 or 3 of the Social Security (Payment on Account of Benefit)
+             Regulations 2013 or Part 2 or 3 of the Social Security (Payments on
+            Account of Benefit) Regulations (Northern Ireland) 2016; <br>
+
+                (f) capital value of the client's business in the case of the self employed;<br>
+                (g) capital value of the clients interest in a trust fund (however
+            do include any capital sum that is paid out to or on behalf of the
+            client, and assess as income any regular payments made to or on behalf
+            of the client);<br>
+              	(h) any payment made out of the Independent Living Fund (2006) or out of the Welsh Independent Living Grant;</p>
+              </blockquote>
+                <p><b>4.</b>In addition, providers may exercise discretion provided
+            by Regulation 40(2) to disregard a payment which meets all of the
+            following conditions:<br>
+                  (a) the payment was made to an individual who is a victim of the fire at Grenfell Tower<br>
+                  (b) the payment was made to that individual because the individual was a victim of the fire at Grenfell Tower<br>
+                  (c) the payment was not made directly to the individual ‘A’ by an individual ‘B’ known personally to the individual ‘A’</p>
+
+
+            		<p><b>5.</b> Cars or other vehicles in regular use are generally
+            treated as nil value for assessment purposes under Reg 31(b), unless
+            they are of exceptional value (e.g. classic cars, luxury vehicles) in
+            which case the vehicle must be valued under Reg 31(a) as the amount for
+            which that resource would realise if sold.</p>
+
+            <a name="2E-021"></a>
+            <a name="2C_021"></a>
+                    <h3><b>7.2 The client's share of joint assets when the partner is the opponent or contrary interest exists</b></h3>
+
+                    <p><b>1.</b> Regulation 35 provides that the interest of an
+            individual in assets owned jointly or in common with any other person
+            may be treated as (a) owned in equal shares or (b) in such other
+            proportions as appear to the Director to be equitable.  There will often
+             be assets which are jointly owned by the opposing parties or to which
+            both parties have access. Where assets are held in joint names the
+            provider, must assume that the asset is owned in equal shares, unless
+            documented evidence of the asset being owned in unequal shares (e.g.
+            70:30 division etc) exists and is provided by the client. </p>
+            		<p><b>2.</b> In the case of a joint bank account, if the client has
+            full access to the money, then the whole amount must be included in the
+            client's assets. If the client establishes that there is an agreement or
+             understanding about the balance being split equally between the
+            opposing parties, then it would be equitable to include half of the
+            balance in the calculation. (See also section 7.4 Subject matter of the
+            dispute below). </p>
+
+            <a name="2E-022"></a>
+            <a name="2C_022"></a>
+            		<h3><b>7.3 Value of property</b></h3>
+            		<p><b>1.</b> Provided it is not the subject matter of the dispute (see
+             s.7.4 below for details), a clients main or only dwelling in which he
+            resides must be taken into account as capital subject to the following
+            rules (Regulations 37 and 39): </p>
+            		 <blockquote>
+              <p>(a) The dwelling should be valued at the amount for which it could be sold on the open market;<br>
+            	 (b) The amount of any mortgage or loan secured by a charge registered
+            on the property must be deducted but the maximum amount that can be
+            deducted for such a mortgage or loan is £100,000 (this is known as the <b>mortgage disregard</b>); and <br>
+            	 (c) The first £100,000 of the value of the clients interest after
+            making the above mortgage deduction must be disregarded (this is known
+            as the <b>equity disregard</b>).</p>
+            </blockquote>
+
+            <p> Example 1:</p>
+            <p> The applicant has a home worth £150,000 and the mortgage is £75,000:
+
+            <table width="60%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <tbody>
+                      <tr>
+                        <td align="center">
+                          <p>Value of home</p>
+                        </td>
+                        <td align="center">
+                          <p>£150,000</p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <td align="center">
+                          <p>Deduct mortgage (actual amount or £100,000 if figure exceeds maximum):</p>
+                        </td>
+                        <td align="center">
+                          <p>£75,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Deduct equity disregard</p>
+                        </td>
+                        <td align="center">
+                          <p>£100,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Amount to be taken into account in determining financial eligibility:</p>
+                        </td>
+                        <td align="center">
+                          <p>£nil</p>
+                        </td>
+                       </tr>
+                      </tbody>
+                    </table>
+
+            		</p><p> In this example the client is therefore eligible in this
+            example (provided other capital when added to this figure does not
+            exceed the £8000 upper limit).</p>
+            <p> Example 2:</p>
+            <p> The applicant has a home worth £215,000 and the mortgage is £200,000:</p>
+
+            <table width="60%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <tbody>
+                      <tr>
+                        <td align="center">
+                          <p>Value of home</p>
+                        </td>
+                        <td align="center">
+                          <p>£215,000</p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <td align="center">
+                          <p>Deduct mortgage (actual amount or £100,000 if figure exceeds maximum):</p>
+                        </td>
+                        <td align="center">
+                          <p>£100,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Deduct equity disregard</p>
+                        </td>
+                        <td align="center">
+                          <p>£100,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Amount to be taken into account in determining financial eligibility:</p>
+                        </td>
+                        <td align="center">
+                          <p>£15,000</p>
+                        </td>
+                       </tr>
+                      </tbody>
+                    </table>
+
+            	<p> In this example the client is ineligible</p>
+            	<p><b>2.</b> Where the applicant has more than one property the value
+            of all other properties should be taken into account but the total
+            amount which can be allowed in respect of mortgages and loans secured by
+             charges on all the properties cannot exceed £100,000. In applying this
+            rule the mortgage for the main dwelling is deducted last. There is no
+            equity disregard for second properties.</p>
+            	<p> Example 3:</p>
+            	<p> The client has a main dwelling worth £150,000 and a second dwelling worth £100,000. Each has a mortgage of £80,000.</p>
+
+            	<table width="60%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <tbody>
+                      <tr>
+                        <td align="center">
+                          <p>Value of second dwelling:</p>
+                        </td>
+                        <td align="center">
+                          <p>£100,000</p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <td align="center">
+                          <p>Deduct mortgage (actual amount or £100,000 if figure exceeds maximum):</p>
+                        </td>
+                        <td align="center">
+                          <p>£80,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Amount to be taken into account in assessing financial eligibility</p>
+                        </td>
+                        <td align="center">
+                          <p>£20,000</p>
+                        </td>
+                       </tr>
+                      </tbody>
+                    </table>
+            	<p>Only £20,000 of the £100,000 maximum mortgage disregard remains:</p>
+
+            	<table width="60%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <tbody>
+                      <tr>
+                        <td align="center">
+                          <p>Value of home</p>
+                        </td>
+                        <td align="center">
+                          <p>£150,000</p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <td align="center">
+                          <p>Deduct mortgage up to maximum allowable:</p>
+                        </td>
+                        <td align="center">
+                          <p>£20,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Deduct equity disregard</p>
+                        </td>
+                        <td align="center">
+                          <p>£100,000</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Amount to be taken into account in determining financial eligibility:</p>
+                        </td>
+                        <td align="center">
+                          <p>£30,000</p>
+                        </td>
+                       </tr>
+                      </tbody>
+                    </table>
+            	<p> In this example the client is ineligible.</p>
+            	<p><a name="2C_24"></a>        </p>
+            	<h3><a name="2C_024">
+            	  <b>7.4 Subject matter of the dispute</b></a></h3>
+                    <p><b>1.</b> Under regulation 38, the value of the subject
+            matter of any claim in respect of which an individual is seeking
+            funding, is required to be disregarded from that individuals capital;
+            however the amount disregarded under the subject matter of dispute
+            (SMOD) rule must not exceed £100,000 for all forms of civil legal
+            services. Where the clients interests in assets that are SMOD exceeds
+            £100,000, the excess will be included within the determination. </p>
+                    <p><b>2.</b> For disputed assets that are jointly owned the guidance set out in section 7.2 applies</p>
+            		<p><b>3.</b>The SMOD disregard applies to the clients interest in assets that are in dispute, which is determined in the following way:</p>
+
+            	<table width="80%" cellspacing="0" cellpadding="0" border="1" align="center">
+                      <tbody>
+                      <tr>
+                        <td align="center">
+                          <p><b>SMOD ASSET</b></p>
+                        </td>
+                        <td align="center">
+                          <p><b>CAPITAL DETERMINATIONS</b></p>
+                        </td>
+                      </tr>
+                       <tr>
+                        <td align="center">
+                          <p>Held in client's sole name:</p>
+                        </td>
+                        <td align="center">
+                          <p>Include asset on the basis of clients interest being 100%.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Held in joint names with opponent</p>
+                        </td>
+                        <td align="center">
+                          <p>Include asset on the basis of client holding an equal
+            part-share in the asset. Clients interest assumed to be 50%. (Note: Do
+            an appropriate adjustment if a third party also holds a share in the
+            asset).</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Held in opponents sole name</p>
+                        </td>
+                        <td align="center">
+                          <p>Do not include the asset in the clients financial determination.</p>
+                        </td>
+                       </tr>
+                      </tbody>
+                    </table>
+
+            		<p> The financial determination is based on how the asset is currently
+             held or registered, not on what each party is hoping to achieve if they
+             are successful at the end of the case. So, for example, in a family
+            dispute where the former matrimonial home is SMOD, if the client is
+            seeking 50% of the property but the property is currently registered in
+            the opponents sole name, treat the clients interest in the asset as
+            nil and do not include the asset in the determination of the clients
+            financial eligibility for legal aid.</p>
+            		<p><b> 4.</b> The SMOD disregard only applies to capital assets.
+            Income cannot be regarded as SMOD since the issue here is simply whether
+             the client is currently receiving the income or not. If income is being
+             received then it should be included in the determination even if the
+            dispute relates to the level of that income. For example if the client
+            is challenging the level of maintenance in payment i.e. seeking an
+            increased amount, the amount of any maintenance currently being received
+             should be included in the determination. </p>
+
+            	<p>&nbsp;</p>
+            <a name="2E-023"></a>
+                    <p><b>5.</b> Equity from property is determined under the
+            regulations after applying mortgage and equity disregards as appropriate
+             (See Section 7.3 above). In dealing with property assets which are in
+            dispute, the following hierarchy of disregards will apply:</p>
+            <p><b>Where a client's main or only dwelling (held in sole or joint names with opponent) is the subject matter of dispute</b><br></p>
+            <ul>
+            <li>Step 1) (a) Apply the <b>mortgage disregard</b> (actual mortgage or
+            £100,000 whichever is the less) to the value of the property to
+            establish the total amount of equity within the property; (b) Determine
+            the clients share of this equity  if property is in joint names assume
+             an equal share of the property (i.e. 50% or adjust if a third party
+            also owns a share) unless evidence is provided of a different division
+            of property. Multiply total equity assessed under Step 1(a) by the
+            clients percentage share of the property.</li>
+            <li>Step 2) Apply the <b>subject matter of dispute disregard</b> of £100,000 to the client's share of  any equity within the property. </li>
+            <li>Step 3) Apply the <b>Equity disregard</b> of £100,000 to the remainder (if any) of the client's share of the equity within the main dwelling.</li>
+            </ul>
+            <p>Therefore, the mortgage disregard will be applied <b>before</b> the subject matter of dispute disregard. The equity disregard is applied <b>after</b> the subject matter of dispute disregard to any remaining property equity.</p>
+            <table width="50%" cellspacing="0" cellpadding="2" border="0" align="center">
+            <tbody><tr>
+            <td colspan="2"><p>Example 1:<br>The applicant has a home worth £320,000
+             and the mortgage is £150,000. The property is registered in joint names
+             with his opponent.</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><p>Value of Home</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£320,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Deduct mortgage up to maximum allowable:</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£220,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Client's share of Equity (assume asset held in equal shares):</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£110,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><br>
+            <p> Has the opponent made a claim against these assets  Yes/No? <b>If Yes</b>:</p>
+            <br>
+            </td>
+            </tr>
+            <tr>
+            <td><p>Apply Subject Matter of Dispute disregard</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Remaining Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£10,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Apply Equity disregard</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Capital to be included in determination:</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£nil</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><p>The client is therefore eligible for funding in this
+            example (provided other capital which is not in dispute when added to
+            this figure does not exceed the £8000 upper limit).</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody></table>
+            <br><br>
+            <table width="50%" cellspacing="0" cellpadding="2" border="0" align="center">
+            <tbody><tr>
+            <td colspan="2"><p>Example 2:<br>The applicant has a home worth £520,000 and the mortgage is £150,000. The property is registered in his sole name.</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><p>Value of Home</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£520,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Deduct mortgage up to maximum allowable:	</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£420,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Client's share of Equity: </p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£420,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><br>
+            <p>Has the opponent made a claim against these assets  Yes/ No? <b>If Yes</b>:</p>
+            <br>
+            </td>
+            </tr>
+            <tr>
+            <td><p>Apply Subject Matter of Dispute disregard</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Remaining Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£320,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Apply Equity disregard: </p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Capital to be included in determination:</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£220,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><p>The client is therefore ineligible for funding in this example.</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody></table>
+            <br><br>
+            <table width="50%" cellspacing="0" cellpadding="2" border="0" align="center">
+            <tbody><tr>
+            <td colspan="2"><p>Example 3:<br>The applicant has a home worth £500,000
+             and the mortgage is £150,000. The property is registered in joint names
+             with her opponent. The client also has full access to a joint savings
+            account, account balance £9,000</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><p>Value of Home</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£500,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Deduct mortgage up to maximum allowable:</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£400,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Client's share of Equity (assume asset held in equal shares):</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£200,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Client's savings (from joint account):</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£9,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><br>
+            <p> Has the opponent made a claim against these assets  Yes/ No?  <b>If Yes</b>:</p>
+            <br>
+            </td>
+            </tr>
+            <tr>
+            <td><p>Apply Subject Matter of Dispute disregard</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Remaining Equity and Savings</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£109,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Apply Equity exemption to property equity only</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Capital to be included in determination:</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£9,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><p>The client is therefore ineligible for funding in this example.</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody></table>
+
+            <br><br>
+            <table width="50%" cellspacing="0" cellpadding="2" border="0" align="center">
+            <tbody><tr>
+            <td colspan="2"><p>Example 4:<br>The applicants main home is worth
+            £240,000 and her other property is worth £90,000, both properties are
+            registered in joint names with her opponent and both have mortgages of
+            £80,000.</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><p>Value of Other property:</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£90,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Deduct mortgage (maximum £100,000 if higher):</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£80,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Equity</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>£10,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Client's share of Equity(assume asset held in equal shares):</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£5,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Value of Main home:</p></td>
+            <td><p>&nbsp;</p></td>
+            <td>&nbsp;</td>
+            <td><p>£240,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Deduct actual mortgage or remainder of overall £100,000 maximum allowance available:</p></td>
+            <td><p>&nbsp;</p></td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£20,000</p></td>
+            </tr>
+            <tr>
+            <td><p>(4) Equity</p></td>
+            <td><p>&nbsp;</p></td>
+            <td>&nbsp;</td>
+            <td><p>£220,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Client's share of Equity (assume asset held in equal shares):</p></td>
+            <td><p><b>(6)</b></p></td>
+            <td>&nbsp;</td>
+            <td><p><b>£110,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><br>
+            <p>Has the opponent made a claim against these assets  Yes/ No? <b>If Yes</b>:</p>
+            <br>
+            </td>
+            </tr>
+            <tr>
+            <td><p>Apply Subject Matter of Dispute disregard to main home:</p></td>
+            <td>&nbsp;</td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Remaining equity in main home</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£10,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Remaining equity in other property </p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£5,000</b></p></td>
+            </tr>
+            <tr>
+            <td><p>Apply Equity Disregard (main dwelling only)</p></td>
+            <td><p>(7)</p></td>
+            <td><p>minus&nbsp;&nbsp;</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Capital to be included in determination</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p><b>£5,000</b></p></td>
+            </tr>
+            <tr>
+            <td colspan="2"><p>The client is therefore eligible for funding in this
+            example (provided other capital which is not in dispute, when added to
+            this figure does not exceed the £8000 upper limit)</p></td>
+            <td>&nbsp;</td>
+            </tr>
+            </tbody></table>
+
+
+
+            <p><b>6.</b> Where the clients interest in the main dwelling property
+            and in other capital assets is the subject matter of dispute, the
+            subject matter of dispute exemption (i.e. £100,000 disregard) should be
+            applied to the main dwelling property first; the remainder (if any)
+            should then be applied to the other assets which are in dispute (see
+            example 4 above). The total amount disregarded as subject matter of
+            dispute is not to exceed £100,000.</p>
+            <p><b>7. Where the property in dispute is not the client's main dwelling:</b> Carry out Steps 1 (mortgage disregard) and 2 (subject matter of dispute disregard) above, but do <b>not</b> apply the main dwelling equity disregard (i.e. Step 3) to the client's share of property equity.</p>
+            <p><b>8.</b> Sometimes it will be obvious that a particular asset is in
+            dispute between the parties, but in the family/matrimonial context the
+            point is more difficult to determine if parties seek funding at an early
+             stage and there are a range of assets which may or may not be at issue.
+             The general approach should be that an asset should not be treated as
+            the subject matter of the dispute if the other party has made no
+            specific claim against it.</p>
+            <p><b>9.</b> If the funding is for services on issues about a child or
+            children, then assets cannot be treated as subject matter of the
+            dispute, even if the parties are litigating or otherwise in dispute over
+             those assets (although the assets may be disregarded under any other
+            appropriate heading).</p>
+
+
+            <a name="2E-025"></a>
+                      <a name="2F_7_5"></a>
+            		  <h3><b>7.5 Pensioner's disregard (Regulation 41)</b></h3>
+            <p><b>1.</b> The pensioner disregard applies where either the client or
+            an individual whose resources are to be treated as the clients
+            resources (e.g. partner with whom their resources are to be aggregated)
+            is aged 60 years or over at the date of calculation and their disposable
+             income is less than £315 per month.</p>
+            <p><b>2.</b> The following process is followed:<br><br>
+            (a)	calculate the client's (and partner's) disposable income;<br>
+            (b)	if the disposable income figure is <b>above</b> £315 per month, the amount of disposable capital is assessed in accordance with the normal regulations;<br>
+            (c)	if however, the disposable income is £315 per month or less, then
+            the capital held, up to the maximum available for the particular income,
+             is disregarded in accordance with the following table:</p>
+
+            <br><table width="50%" cellspacing="0" cellpadding="2" border="1" align="center">
+            <tbody><tr>
+            <td><p><b>Monthly disposable Income - excluding net income derived from capital(£)<b></b></b></p></td>
+            <td><p><b>Amount of capital disregard<b></b></b></p></td>
+            </tr>
+            <tr>
+            <td><p>Passporting Benefit</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>0 - 25</p></td>
+            <td><p>£100,000</p></td>
+            </tr>
+            <tr>
+            <td><p>26 - 50</p></td>
+            <td><p>£90,000</p></td>
+            </tr>
+            <tr>
+            <td><p>51 - 75</p></td>
+            <td><p>£80,000</p></td>
+            </tr>
+            <tr>
+            <td><p>76 - 100</p></td>
+            <td><p>£70,000</p></td>
+            </tr>
+            <tr>
+            <td><p>101 - 125</p></td>
+            <td><p>£60,000</p></td>
+            </tr>
+            <tr>
+            <td><p>126 - 150</p></td>
+            <td><p>£50,000</p></td>
+            </tr>
+            <tr>
+            <td><p>151 - 175</p></td>
+            <td><p>£40,000</p></td>
+            </tr>
+            <tr>
+            <td><p>176 - 200</p></td>
+            <td><p>£30,000</p></td>
+            </tr>
+            <tr>
+            <td><p>201 - 225</p></td>
+            <td><p>£20,000</p></td>
+            </tr>
+            <tr>
+            <td><p>226 - 315</p></td>
+            <td><p>£10,000</p></td>
+            </tr>
+            <tr>
+            <td><p>Over 315</p></td>
+            <td><p>nil</p></td>
+            </tr>
+            </tbody></table>
+
+            <p>Example:<br>
+            The client is aged 66. Total disposable income excluding interest from capital is £90.<br>
+            Total disposable capital including property and other assets (after other allowances and disregards) is £73,000.<br>
+            Deduct the pensioners disregard in accordance with Appendix 2 of £70,000.<br>
+            Disposable capital is therefore £3,000<br>
+            The client will therefore be eligible for funding.</p>
+            <p><b>3.</b> Client or partner aged 60 or over on passporting benefit:
+            Where the client (or an individual whose resources are to be treated as
+            the clients resources) is aged 60 years or over, and is properly in
+            receipt (directly or indirectly) of Income Support, Income-Based
+            Jobseekers Allowance, Income-Related Employment and Support Allowance,
+            Guarantee Credit or Universal Credit assume nil income and apply the
+            maximum pensioner allowance of £100,000. The maximum pensioner disregard
+             will therefore always apply to a person who is in receipt of Guarantee
+            Credit due to the age criteria for receipt of that benefit.
+            <br><br>
+            <b>Please note</b> if both the client and partner are aged 60 years or over, do <b>not</b>
+             double the allowance  only one amount of disregard will apply in
+            respect of that determination (as set out in the above table), e.g. if
+            aggregated disposable income is £160 per month, one amount of £40,000
+            should be disregarded.</p>
+
+            <a name="2E-026"></a>
+            <a name="2C_026"></a>
+              <h2>8. Intentional deprivation of resources</h2>
+            	<h3><b>8.1 General</b></h3>
+                    <p><b>1.</b> Occasionally an individual will deliberately
+            transfer or dispose of income or assets to another person in order to
+            make him- or herself eligible for civil legal services. This is not
+            permitted. If it appears that the applicant has directly or indirectly
+            deprived him- or herself of any resources or has converted any part of
+            his resources into resources which are to be disregarded wholly or
+            partly under the regulations, the resources which have been transferred
+            or converted must still be taken into account in the determination. This
+             will normally mean that the individual will not qualify for funding.</p>
+                    <p><b>2.</b> Note that this rule applies where it appears to the
+             provider that the person concerned has transferred or deprived himself
+            of assets with the intention of reducing the amount of his gross income,
+             disposable income, or disposable capital, whether for the purpose of
+            becoming eligible or otherwise (e.g. the reason may be to hide assets
+            from his opponent). Obviously this rule would not apply if the person
+            had lost assets or money without intending to do so (e.g. an investment
+            has lost value).</p>
+
+            <a name="2E-027"></a>
+            <a name="2C_027"></a>
+            	  <h2>9. Eligibility of children</h2>
+               <h3><b>9.1 General</b></h3>
+                    <p><b>1.</b> When assessing the means of a child, the resources
+            of a parent, guardian or other person who is responsible for maintaining
+             him or who usually contributes substantially to the child's
+            maintenance must be taken into account, as well as any assets of the
+            child. There is a discretion not to aggregate assets in this way if it
+            appears inequitable to do so, having regard to all the circumstances
+            including the age and resources of the child and any conflict of
+            interest between the child and the adult(s). For example in
+            consideration of the age and resources of the child, the provider may
+            determine that it is inequitable to aggregate a child aged 17 years who
+            is estranged from his parents, living separately from them and who is
+            fully financially independent from his parents.</p>
+            		<p><b>2.</b> Where a child is a looked after child i.e. the
+            responsibility of the local authority, it would usually be inequitable
+            for his or her foster carers/social workers income and capital to be
+            aggregated with that of the child.</p>
+
+            <a name="2E-028"></a>
+            <a name="2C_028"></a>
+              <h2>10. Errors and New Information</h2>
+              <h3><b>10.1 General</b></h3>
+                    <p><b>1.</b> Sometimes a mistake will be made in determining an
+            individuals financial eligibility or new information will come to light
+             which suggests that an earlier determination was inaccurate. Where this
+             happens the determination can and should be reviewed and a new
+            determination carried out which may mean that the individual was never
+            eligible for civil legal services. If it is shown that the client was
+            ineligible at the time of the application, the provider should
+            immediately cease to provide help under the current Controlled Work
+            form; if the clients circumstances have changed so that he is now
+            eligible then a new application for Controlled Work may be made. If any
+            dishonesty or improper conduct in relation to disclosure of assets is
+            discovered, the details should be reported to the Legal Aid Agency. In
+            such cases the costs incurred prior to such a discovery will be assessed
+             in accordance with the Directors externally published costs assessment
+             guidance.</p>
+
+            <a name="2E-029"></a>
+            <a name="2C_029"></a>
+                   <h2>11. Changes in circumstances</h2>
+               <h3><b>11.1 General</b></h3>
+                    <p><b>1.</b> Where on an accurate determination a client is
+            found financially eligible for funding by the provider, a further
+            determination of means may be required if the clients circumstances
+            change. The client is under a duty to report any change of his financial
+             circumstances of which he is or should reasonably be aware which has
+            occurred since the original determination and which may affect the terms
+             on which the client was determined to be eligible to receive civil
+            legal services. Such improvements in means, which may include new
+            employment, a change of benefits, or a new asset, lottery win etc.,
+            should be notified to the provider in relation to any existing
+            application or fresh application for civil legal services. </p>
+                     <p><b>2.</b> However the provider may decide not to make a
+            further assessment in relation to an existing application, if he or she
+            considers such a further determination inappropriate, having regard in
+            particular to the period during which funded services are likely to
+            continue to be provided to the client. For controlled work where the
+            determinations are delegated to the provider, a further determination is
+             unlikely to be appropriate unless:</p>
+            	<blockquote>
+                        <p>(a)the clients means have improved dramatically i.e. a
+            new capital receipt e.g. the client receives a substantial inheritance
+            or lottery win etc of £8000 or more, or new source of income in excess
+            of the gross income limit;  or</p>
+            			<p>(b)the matter is likely to run for three months or more, after a
+            significant change in circumstances. A significant change is an increase
+             in capital in excess of £750 or an increase in income in excess of £60
+            per month that takes the clients income or capital above the relevant
+            eligibility limit.
+            			However, it will be appropriate to carry out a new determination
+            reflecting the clients changed circumstances in respect of any fresh
+            application for civil legal services.</p>
+            	</blockquote>
+            		 <p><b>3.</b> For example, the client reports that he has received a
+            capital sum of £10,000. This is considered a dramatic improvement in
+            means, and a further determination should be undertaken immediately.
+            Unless the client is aged 60 years or older and on a low income, in
+            which case an additional disregard may apply (see s.7.5 above), it will
+            only be necessary to review capital and determine that the client is no
+            longer eligible on the basis of the £10,000 receipt. Any capital receipt
+             of £8,000 or more should be considered a dramatic improvement in means.</p>
+            <p><a name="2E-030"></a>		</p>
+            <p><b>4.</b> An example of a dramatic improvement of income would be
+            where a client reports that they have started a new job that provides a
+            salary of £3000 per month i.e. an amount in excess of the gross income
+            limit. A further determination of income should be undertaken
+            immediately in these circumstances, in which case the client will be no
+            longer eligible on the basis of gross income.</p>
+            		<p><b>5.</b> Where the client reports a significant change of
+            circumstances, (e.g. a client whose capital was previously assessed as
+            £7,000 reports that they have received further capital of £1,500 or a
+            client whose disposable income was £600 per month reports that they are
+            receiving an additional income of £150 per month, i.e. a sum which takes
+             the client above the eligibility limit), the provider will only need to
+             carry out a further determination if the case is likely to last for
+            three months or longer following the change; otherwise a further
+            determination will not be necessary. If the case is likely to continue
+            for longer than 3 months, the further determination should be carried
+            out immediately and if the client is ineligible, the provider should
+            cease work on the case.</p>
+            		<p><b>6.</b> For Licensed work i.e. Family Help (Higher) or Legal
+            Representation (other than controlled work), there continues to be
+            provision for the Director to reassess entitlement to Legal
+            Representation at any point during the life of a certificate when a
+            clients means change (see Guide to Determining Financial Eligibility
+            for Certificated Work).</p>
+            		<p><b>7.</b> Where a client is initially ineligible there is nothing
+            to prevent a further application and determination where a change in
+            circumstances makes him eligible (subject to section 8.1 intentional
+            deprivation of resources). You may only claim for work carried out
+            following a new determination that the client is eligible.</p>
+
+            <a name="2E-031"></a>
+            <a name="2C_031"></a>
+             <h2>12. Evidence of Means</h2>
+              <h3><b>12.1 General</b></h3>
+            	<p><b>1.</b> Rule 3.23 of the 2013 Standard Civil Contract
+            Specification provides that subject to the exceptions set out within
+            r.3.24, satisfactory evidence in support of the clients information as
+            to their means must be provided to you before you assess, and the
+            evidence (or a copy) retained on the file. </p>
+              <h3><b>12.2 Evidence of means</b></h3>
+            	<p><b>1.</b> Satisfactory evidence as to means will need to be supplied
+             and a copy kept on file. Examples of satisfactory evidence for income
+            are set out at paragraph 5 below. <b>This list is not exhaustive and other evidence may be accepted</b>
+             provided it is reasonably sufficient to establish the clients and (if
+            aggregated) their partners income during the calculation period i.e.
+            nature of income and amount(s) received. The calculation period is the
+            calendar month ending on the day of the application and providers should
+             attempt to obtain evidence relating to that period.</p>
+            	<p><b>2.</b> Where it is not practicable to obtain evidence relating
+            directly to the calculation period, written evidence that does not refer
+             directly to the calculation period itself may be accepted as
+            confirmation of the clients statement of their income during that
+            period where it seems reasonable to do so. For state benefits, tax
+            credits and financial support from local authorities such as payments
+            under Section 17 of the Children Act 1989, notification letters may be
+            issued only at specified times or following a change in circumstances
+            affecting payment of the benefit, tax credit or financial support. For
+            example where the client produces a letter from the Dept. Of Work and
+            Pensions confirming their award of benefit  this may well be dated some
+             time before the start of the calculation period. In such cases,
+            providers should try to ensure that the evidence the client provides is
+            the most up to date in the clients possession  such as the last letter
+             confirming an up rating of benefit, tax credits or financial support.
+            If the notification letter is over six months old, further supporting
+            evidence will be required to evidence continued payment (see table in
+            paragraph 5 below).</p>
+            	<p><b>3.</b>In the case of the self-employed, corroborative evidence
+            may sometimes not relate directly to the calculation period. Accounts
+            may not have been prepared for that period but earlier accounts can be
+            used to back up the clients statement of drawings from the business for
+             personal use, as opposed to business expenses, if no more up to date
+            evidence is available.</p>
+
+            <a name="2E-032"></a>
+            	<p><b>4.</b> Where the income consists of a benefit or tax credits or
+            other local authority financial support, the evidence must show the type
+             of benefit or tax credit or financial support in payment and where
+            relevant the amount. Clearly the amount will be irrelevant if the
+            benefit is Income Support, Income-Based Jobseekers Allowance,
+            Income-Related Employment and Support Allowance, Guarantee Credit (under
+             section 1(3)(a) of the State Pension Credit Act 2002(a)) or Universal
+            Credit [or s4 or s95 NASS support for asylum and immigration matters],
+            but it is imperative that the type of payment is specified. Particular
+            care should be taken where there are passporting and non-passporting
+            versions of a benefit (e.g. Jobseekers’ Allowance can be income-based or
+             contributions-based); to passport the individual, it must be clear that
+             the relevant type of benefit (i.e. the passporting element) is in
+            payment. In these circumstances where there are two versions of the
+            benefit, a bank statement by itself will not specify the type of payment
+             and therefore will not be satisfactory evidence for passporting. In
+            lieu of written evidence (including where the evidence provided is
+            unclear as to the type of benefit or amount in payment) suppliers may
+            telephone the relevant agency who makes the payment, e.g. Dept. Of Work
+            and Pensions or HM Revenue and Customs or the local authority as
+            appropriate, whilst the client is in attendance to confirm details of
+            type and amount of benefit or tax credit or financial support, and
+            current entitlement. A note of that conversation including the relevant
+            details, along with any unique reference number and name of person
+            spoken to, will be acceptable evidence on audit.</p>
+            	<p><b>5.</b> Examples of acceptable (and unacceptable) evidence for income.<br><br>
+            		<table width="75%" cellspacing="0" cellpadding="2" border="1" align="center">
+            			<tbody><tr>
+            				<td valign="top"><p><b>SOURCE OF INCOME</b></p></td>
+            				<td valign="top"><p><b>SATISFACTORY EVIDENCE</b></p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Employed (P.A.Y.E.)</b></p></td>
+            				<td valign="top"><p>Most recent payslip(s).</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Self Employed</b></p></td>
+            				<td valign="top"><p>Recent bank statements or working accounts/cash book showing drawings. Most recent tax assessment or set of accounts.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>State Benefits (various) - Direct Payment of benefit to Client's bank/building society /post office card account.</b></p></td>
+            				<td valign="top"><p>1) Recent bank/building society statement i.e.
+            showing transactions during the calculation period - however benefit
+            type must be specified on the statement; 2) original benefit
+            notification letter supported by a recent bank statement i.e. showing
+            transactions during the calculation period, where the notification
+            letter is dated more than 6 months prior to the date of the application;
+             3) most recent letter notifying a change in benefit amount (must be no
+            more than 6 months old, unless supported by recent bank statement
+            showing transactions during the calculation period); 4) if the client
+            can only provide a bank statement which does not specify the type of
+            benefit (in particular where there is a passporting or non-passporting
+            version, or otherwise the name is unclear), the provider should refer to
+             para.12.2.4 above concerning evidence in lieu of written confirmation
+            for audit requirements.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Income Support - IS</b></p></td>
+            				<td valign="top"><p>See Direct Payments information above.<br>Alternatively
+             a letter from the Dept. Of Work and Pensions confirming the client was
+            in receipt of IS at time of applying for Legal Help. Written evidence
+            must be no more than 6 months old.<br>
+            [Order Books are now largely obsolete - however if a current order book
+            is held, a copy of the front of the benefit book showing the type of
+            benefit and the date of the last payment order (or if not clear, include
+             copy of second page / inside cover confirming benefit in payment)].</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Income-Based Jobseekers Allowance (IBJSA)</b></p></td>
+            				<td valign="top"><p>See Direct Payments information above.<br>Alternatively
+             a letter from the Jobcentre Plus/Dept. of Work and Pensions confirming
+            the client was in receipt of IBJSA at time of applying for Legal Help.
+            Written evidence must be no more than 6 months old.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Income-Related Employment and Support Allowance (IR-ESA)</b></p></td>
+            				<td valign="top"><p>See Direct Payments information above.<br>Alternatively
+             a letter from the Jobcentre Plus/Dept. of Work and Pensions confirming
+            the client was in receipt of IR-ESA at time of applying for Legal Help.
+            Written evidence must be no more than 6 months old.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Guarantee Credit (under section 1(3)(a) of the State Pension Credit Act 2002(a))</b></p></td>
+            				<td valign="top"><p>See Direct Payments information above.<br>
+            				The Award Letter together with the Award Calculation Sheet (or the
+            clerical versions of these forms) should be accepted as satisfactory
+            evidence of claim (if no more than 6 months old). Otherwise any relevant
+             correspondence from the paying agency in the client's possession would
+            be acceptable such as a Statement of Entitlement that explains how the
+            client's Pension Credit has been worked out. Written evidence must be no
+             more than 6 months old.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Universal Credit</b></p></td>
+            				<td valign="top"><p>See Direct Payments information above.<br>
+            				Award notification letter should be accepted (if no more than 6
+            months old), Alternatively a letter from the Jobcentre Plus confirming
+            receipt.</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Asylum Seekers in receipt of NASS support</b></p></td>
+            				<td valign="top"><p>Confirmation from NASS or Local Authority that
+            the individual is in receipt of support. Written evidence must be no
+            more than 6 months old. [. NASS payments paid under s4 or s95 the
+            Immigration and Asylum Act 1999 are only passporting for asylum and
+            immigration matters for Legal Help, Help at Court and Controlled Legal
+            Representation]</p></td>
+            			</tr>
+                  <tr>
+                    <td valign="top"><p><b>Section 17 support/ other local authority payments</b></p></td>
+                    <td valign="top"><p>Confirmation from Local Authority that the
+            individual is in receipt of support, with type of support and amounts
+            paid out for accommodation and any weekly allowance specified. Written
+            evidence must be no more than 6 months old.</p></td>
+                  </tr>
+            			<tr>
+            				<td valign="top"><p><b>Working Tax Credit and Child Tax Credit</b></p></td>
+            				<td valign="top"><p>A copy of the most recent Tax Credit Award
+            Notice issued to the client should be accepted as satisfactory evidence
+            of the claim. Otherwise any relevant correspondence from the paying
+            agency (HM Revenue and Customs) in the client’s possession would be
+            acceptable. Written evidence must be no more than 6 months old. Recent
+            bank statements i.e. showing transactions during the calculation period
+            are also acceptable evidence. (NB Evidence must also be obtained of the
+            client’s other income, e.g. salary).</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Unacceptable evidence as to means</b></p></td>
+            				<td valign="top"><p>Copies of the ES40 (signing on card) or
+            jobseekers agreements - these are not evidence of receipt of benefits
+            -they merely show the client has at some time registered as available
+            for and actively seeking work.<br><br>The debit card of a Post Office card account.<br><br>The Award Letter for Employment and Support Allowance does <strong>not</strong>
+              provide satisfactory evidence of the client being in receipt of a
+            passporting benefit simply by virtue of the standard paragraph on page 4
+             which states: this payment of ESA is based on your National Insurance
+            contribution record and any additional amounts the law says you need to
+            live on. We call this contribution-based and income related ESA... This
+             statement appears on all award notices irrespective of the type of ESA
+            in payment.<br><br>Bank statements are not sufficient evidence of
+            salary/wages from employment as it does not show gross earnings and may
+            include deductions that are not allowed under the legal aid rules.<br><br>
+            The Award Letter or the 'short version' Statement of Entitlement will
+            not be accepted by itself as evidence that the Guarantee State Pension
+            Credit is in payment where the form does not specify the type of Pension
+             Credit received.<br><br>Reference to the individual being in receipt of
+             income support (or other passporting benefit) in the text of a housing
+            benefit or tax credit notification letter is not sufficient evidence
+            that passporting benefit is in payment – evidence must be from the
+            relevant paying agency e.g. Department Of Work and Pensions letter.<br><br>[Order
+             books are largely obsolete, however if a book is held, the front cover
+            only of an order book is unacceptable if it does not show the type of
+            benefit or, where the client is not passported, the amount received].<br><br>This list is not exhaustive.</p></td>
+            			</tr>
+            		</tbody></table><br><br>
+            	</p>
+            <p><a name="2E-033"></a>	</p>
+            <p><b>6.</b> Evidence of expenditure is required in specific
+            circumstances (based on risk) that are set out in the preceding
+            guidance. Examples of acceptable evidence is given below:<br><br>
+            <table width="75%" cellspacing="0" cellpadding="2" border="1" align="center">
+            			<tbody><tr>
+            				<td valign="top"><p><b>EXPENDITURE TYPE</b></p></td>
+            				<td valign="top"><p><b>SATISFACTORY EVIDENCE</b></p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Income Tax</b></p></td>
+            				<td valign="top"><p>For employees: most recent payslip(s).<br><br>For the self employed: copy of latest tax calculation sheet (i.e. last income tax bill).</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>National Insurance</b></p></td>
+            				<td valign="top"><p>Employees: most recent payslip(s).<br><br>[The standard deduction of NI Class 2 of £12.78 per month can be made for the self-employed].</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Housing costs (i.e. where housing costs are more than one-third of client's income).</b></p></td>
+            				<td valign="top"><p>Rent book.<br><br>Tenancy Agreement.<br><br>Copy of mortgage statement.<br><br>Copy of bank statement (where it is clear what the payment relates to).</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Child Care costs (i.e. that are more than £600 per month if working/studying full time or pro rata for part time hours)</b></p></td>
+            				<td valign="top"><p>Copy of bank statement (where it is clear what the payment relates to).<br><br>Copy of agreement / contract with child care provider</p></td>
+            			</tr>
+            			<tr>
+            				<td valign="top"><p><b>Maintenance (i.e. where amount declared appears to be unreasonable / cases of doubt)</b></p></td>
+            				<td valign="top"><p>Cashed cheques<br><br>Bank statements<br><br>Copy of maintenance order (where applicable).</p></td>
+            			</tr>
+            		</tbody></table><br><br>
+            	</p>
+            <p><a name="2E-034"></a>	</p>
+            <p><b>7.</b> For capital, the clients statement and signature on the
+            application form will normally be sufficient evidence, but other
+            documentary evidence of disposable capital must be obtained in cases of
+            doubt (e.g. statements for current accounts, savings or other financial
+            accounts; independent valuations for property or items of value, share
+            certificates etc). In general terms, suppliers should obtain evidence of
+             capital if they have reason to believe, whether through previous
+            dealings with the client, the circumstances of the case, wealthy
+            lifestyle indicators, or otherwise, that the client may have capital in
+            excess of the limit or may have acted to deprive themselves of capital;
+            particular care should also be taken on cases where a client declares
+            capital just under the £3000 limit (for Legal Representation in respect
+            of an immigration matter set out in Regulation 8(3)) or £8000 limit (all
+             other cases).</p>
+            	<p><b>8.</b> Generally the clients means should be assessed together
+            with the accompanying evidence. Clients should be asked to bring the
+            evidence with them at their first appointment.</p>
+            	<p><b>9.</b>The 2013 Standard Civil Contract Specification r.3.24 sets
+            out the circumstances when you may assess the clients means without the
+             accompanying evidence.</p>
+            <p><a name="2E-035"></a>	</p>
+            <p><b>10.</b> Exceptionally, the personal circumstances of the client
+            (such as age, mental disability or homelessness) may make it
+            impracticable for any evidence to be supplied. In such cases,
+            eligibility can be assessed without evidence. However, the attendance
+            note must give the reason why evidence could not be obtained and
+            providers must be prepared to justify this on audit if necessary.</p>
+            	<p><b>11.</b> Whether or not it is impracticable to obtain evidence
+            will depend on the circumstances of the case. Those who are homeless, or
+             who are in detention will have particular difficulty in supplying
+            evidence. For asylum seekers, there may be a difference between those
+            who apply for Legal Help when they have just arrived in the country and
+            cannot be expected to provide evidence, and those who apply when they
+            have been in the country long enough to receive benefits/vouchers or to
+            work, who can provide evidence. It will often be impracticable to obtain
+             evidence of income from patients with mental health problems who are in
+             hospital (for example, those detained under the Mental Health Act).
+            Providers should however attempt to obtain oral or written confirmation
+            of the position (e.g. type of benefit received) from the ward manager or
+             social worker where practicable. It may on occasion prove impracticable
+             to obtain evidence of a partners income, for example where the partner
+             refuses to provide the information despite repeated requests. In such
+            circumstances the provider will rely on the best estimate that the
+            client can give of their partners means for the purposes of
+            aggregation. The provider must record the justification for lack of
+            evidence on the file.</p>
+            	<p><b>12.</b> There may be exceptional cases where a client never
+            attends the providers office during the course of a matter, for example
+             the client is disabled and cannot access the office so the case is
+            entirely conducted via home visits and correspondence. In such cases the
+             provider may not be able to obtain a copy of the evidence of income for
+             the file. It will be acceptable for the provider to confirm on the file
+             that he or she has seen acceptable evidence of income and to record
+            brief details, for example type and amount of benefit and applicable
+            dates.</p>
+            <p><a name="2E-036"></a>	</p>
+            <p><b>13.</b> It is important to remember in this context that the
+            evidence to be supplied must relate to the time of application, so that
+            it is the clients circumstances at that time that are relevant in
+            judging whether or not it was impracticable to obtain evidence.</p>
+            	<p><b>14.</b> Thus, if at the time of the application for Controlled
+            Work the client has applied for state benefits, tax credits or NASS
+            support and their application has not yet been assessed, then it will be
+             impracticable to produce evidence of receipt of such benefit in
+            relation to the period of computation. The supplier should ask the
+            client to produce any written acknowledgement of the application that
+            they have received and clarify whether there is an alternative source of
+             income from which their expenses are currently being met (see also
+            paragraph 16 below). Where practicable, the provider should later obtain
+             confirmation as to whether the benefit was granted. If it was refused
+            on means grounds, the supplier should reconsider whether or not the
+            client was financially eligible. The provider should not passport a
+            client on the basis of Income Support, Income-Based Jobseekers
+            Allowance, Income-Related Employment and Support Allowance, Guarantee
+            Credit or Universal Credit (or NASS support where applicable) without
+            evidence of a live claim in payment.</p>
+            	<p><b>15.</b> As long as evidence is obtained of the main source of
+            income, it will be unnecessary to carry on and obtain evidence of small
+            additional amounts of income that are unlikely to affect eligibility.
+            Where the client is in prison, it will be unnecessary to obtain
+            documentary evidence of their prison income (although the amount stated
+            by the client should be added in to the determination) as the amounts
+            that can be earned are strictly limited. However evidence of wages from
+            outside employment will be required for prisoners released on temporary
+            license and those on 'working out' schemes.</p>
+            	<p><b>16.</b> Some clients will state that they have no access to any
+            income or capital. It would be for the provider to decide whether such a
+             statement was credible and whether or not it was therefore
+            impracticable to obtain evidence of means. However, a note of the
+            circumstances should be kept on the file. Clients without any income at
+            all are likely to be those whose circumstances have recently changed.
+            This might be where, for example, they have just separated from a
+            partner and have applied for benefit or have just arrived in this
+            country and applied for asylum. The provider should enquire how the
+            client is meeting their day-to-day expenses. If a client states that a
+            relative or friend is supporting them, a letter from the relative or
+            friend should be obtained identifying the nature and extent of support
+            (where this is monetary support, amounts must be specified).
+            </p>
+
+            </dt></blockquote>
+
+            </td>
+            		</tr>
+            		<tr>
+            		<td bgcolor="#336666" align="center"><font color="#336666">-</font></td>
+            		</tr>
+            </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}
