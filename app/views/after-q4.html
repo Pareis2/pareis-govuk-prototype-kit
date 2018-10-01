@@ -8,10 +8,10 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
 
-      <form action="partA.html" method="post">
+      <form action="after-q5.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
@@ -22,7 +22,7 @@
                 name: "sixty-or-over",
                 fieldset: {
                   legend: {
-                    text: "8. Have the clients assets (held in sole name or jointly held) been claimed by the opponent?",
+                    text: "Does the client have a partner whose means are to be aggregated?",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--l"
                   }
@@ -39,15 +39,11 @@
                 ]
               }) }}
 
-              {{ govukInsetText({
-                text: "Note: The subject matter of dispute disregard only applies to assets that are specifically claimed by the opponent. All assets that have not been specifically claimed by the opponent must be included in PART B: Capital. "
-              }) }}
-
 
 
             {{ govukButton({
               text: "Next question",
-              href: "partA.html",
+              href: "after-q5.html",
               classes: "govuk-button--start"
             }) }}
 
@@ -57,9 +53,13 @@
           </main>
 
       </form>
-
-
     </div>
+    <div class="govuk-grid-column-one-third govuk-table__header--numeric">
+        <p class="govuk-body govuk-!-margin-bottom-6"></p>
+        <h3><a href="https://civil-eligibility-calculator.justice.gov.uk/ecalc_lar/guidance.asp#2C_006">View guidance</a></h3>
+      </div>
+
+
 </div>
 
 {% endblock %}

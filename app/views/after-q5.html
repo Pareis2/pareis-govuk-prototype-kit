@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form action="after-q6.html" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+
+
+            {{ govukRadios({
+              classes: "govuk-radios--inline",
+              idPrefix: "means",
+              name: "means",
+              fieldset: {
+                legend: {
+                  text: "Is your client or their partner (whose means are to be aggregated) aged 60 or over?",
+                  isPageHeading: true,
+                  classes: "govuk-fieldset__legend--l"
+                }
+              },
+
+              items: [
+                {
+                  value: "yes",
+                  text: "Yes"
+                },
+                {
+                  value: "no",
+                  text: "No"
+                }
+              ]
+            }) }}
+
+
+
+            {{ govukButton({
+              text: "Next question",
+              href: "after-q6.html",
+              classes: "govuk-button--start"
+            }) }}
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}

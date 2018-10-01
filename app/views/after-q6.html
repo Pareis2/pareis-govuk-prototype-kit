@@ -11,24 +11,24 @@
     <div class="govuk-grid-column-full">
 
 
-      <form action="question7.html" method="post">
+      <form action="after-q7.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
+            <h1 class="govuk-heading-l">What is the case category?</h1>
+
+                {{ govukInput({
+
+                  id: "name",
+                  name: "name"
+                }) }}
 
 
-           <h1 class="govuk-heading-l">6. What is the case category?</h1>
-
-                  {{ govukInput({
-
-                    id: "name",
-                    name: "name"
-                  }) }}
 
             {{ govukButton({
               text: "Next question",
-              href: "question7.html",
+              href: "after-q7.html",
               classes: "govuk-button--start"
             }) }}
 

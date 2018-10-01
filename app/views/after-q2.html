@@ -8,25 +8,28 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
 
-      <form action="question5.html" method="post">
+      <form action="after-q3.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
                 classes: "govuk-radios--inline",
-                idPrefix: "means",
-                name: "means",
+                idPrefix: "client-partner",
+                name: "client-partner",
                 fieldset: {
                   legend: {
-                    text: "4. Is your client or their partner whose means are to be aggregated?",
+                    text: "Is the client currently receiving any benefits?",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--l"
                   }
                 },
+                hint: {
+                        text: "For example, Income Support, Income Based Jobseeker's Allowance, Income Based Employment and Support Allowance or Guarantee Credit"
+                      },
                 items: [
                   {
                     value: "yes",
@@ -43,7 +46,7 @@
 
             {{ govukButton({
               text: "Next question",
-              href: "question5.html",
+              href: "after-q3.html",
               classes: "govuk-button--start"
             }) }}
 
@@ -56,6 +59,11 @@
 
 
     </div>
+    <div class="govuk-grid-column-one-third govuk-table__header--numeric">
+        <p class="govuk-body govuk-!-margin-bottom-6"></p>
+        <h3><a href="https://civil-eligibility-calculator.justice.gov.uk/ecalc_pre/guidance.asp#2C003">View guidance</a></h3>
+      </div>
+
 </div>
 
 {% endblock %}

@@ -8,25 +8,28 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
 
-      <form action="question6.html" method="post">
+      <form action="after-q4.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
                 classes: "govuk-radios--inline",
-                idPrefix: "sixty-or-over",
-                name: "sixty-or-over",
+                idPrefix: "means",
+                name: "means",
                 fieldset: {
                   legend: {
-                    text: "5. Is your client or their partner (whose means are to be aggregated) aged 60 or over?",
+                    text: "Is the client directly or indirectly in receipt of NASS payments?",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--l"
                   }
                 },
+                hint: {
+                        text: "Immigration and Asylum category work only"
+                      },
                 items: [
                   {
                     value: "yes",
@@ -43,7 +46,7 @@
 
             {{ govukButton({
               text: "Next question",
-              href: "question6.html",
+              href: "after-q4.html",
               classes: "govuk-button--start"
             }) }}
 
@@ -56,6 +59,11 @@
 
 
     </div>
+
+    <div class="govuk-grid-column-one-third govuk-table__header--numeric">
+        <p class="govuk-body govuk-!-margin-bottom-6"></p>
+        <h2><a href="https://civil-eligibility-calculator.justice.gov.uk/ecalc_pre/guidance.asp#2C003">View guidance</a></h2>
+      </div>
 </div>
 
 {% endblock %}

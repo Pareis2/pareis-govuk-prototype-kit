@@ -8,21 +8,21 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
 
-      <form action="question4.html" method="post">
+      <form action="after-q8.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
                 classes: "govuk-radios--inline",
-                idPrefix: "client-partner",
-                name: "client-partner",
+                idPrefix: "sixty-or-over",
+                name: "sixty-or-over",
                 fieldset: {
                   legend: {
-                    text: "3. Does the client have a partner whose means are to be aggregated?",
+                    text: "Have the clients assets (held in sole name or jointly held) been claimed by the opponent?",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--l"
                   }
@@ -39,11 +39,15 @@
                 ]
               }) }}
 
+              {{ govukInsetText({
+                text: "Note: The subject matter of dispute disregard only applies to assets that are specifically claimed by the opponent. All assets that have not been specifically claimed by the opponent must be included in PART B: Capital. "
+              }) }}
+
 
 
             {{ govukButton({
               text: "Next question",
-              href: "question4.html",
+              href: "after-q8.html",
               classes: "govuk-button--start"
             }) }}
 
