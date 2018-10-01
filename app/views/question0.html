@@ -8,23 +8,22 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
-
-
-
-      <form action="question1.html" method="post">
-
+    <!--  <form action="question1.html" method="post">  -->
+    <!-- changed the above line to below to replace the actual page with a virtual page that is in the routes.js file
+    and removed the href that was in the button class -->
+      <form action="/q0form" method="post">
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
-                classes: "govuk-radios--inline",
+                classes: "govuk-radios",
                 idPrefix: "case-start",
                 name: "case-start",
                 fieldset: {
                   legend: {
-                    text: "Are you assessing your clients means for a case started before 1st April 2013?",
+                    text: "Are you assessing your client’s means for a case started:",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--xl"
                   }
@@ -34,12 +33,12 @@
                 },
                 items: [
                   {
-                    value: "yes",
-                    text: "Yes"
+                    value: "before",
+                    text: "before 1 April 2013?"
                   },
                   {
-                    value: "no",
-                    text: "No"
+                    value: "after",
+                    text: "on or after 1 April 2013?"
                   }
                 ]
               }) }}
@@ -48,11 +47,8 @@
 
             {{ govukButton({
               text: "Next question",
-              href: "question1.html",
               classes: "govuk-button--start"
             }) }}
-
-
 
 
           </main>
