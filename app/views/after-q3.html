@@ -11,18 +11,18 @@
     <div class="govuk-grid-column-full">
 
 
-      <form action="question4.html" method="post">
+      <form action="after-q4.html" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
               {{ govukRadios({
                 classes: "govuk-radios--inline",
-                idPrefix: "client-partner",
-                name: "client-partner",
+                idPrefix: "means",
+                name: "means",
                 fieldset: {
                   legend: {
-                    text: "3. Does the client have a partner whose means are to be aggregated?",
+                    text: "4. Is your client or their partner whose means are to be aggregated?",
                     isPageHeading: true,
                     classes: "govuk-fieldset__legend--l"
                   }
@@ -43,7 +43,7 @@
 
             {{ govukButton({
               text: "Next question",
-              href: "question4.html",
+              href: "after-q4.html",
               classes: "govuk-button--start"
             }) }}
 

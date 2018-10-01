@@ -18,8 +18,8 @@ router.post('/q0form', function (req, res) {
   let case_start = req.session.data['case-start']
 
   if (case_start === 'before') {
-    res.redirect('/question1')
+    res.redirect('/before-q1')
   } else {
-    res.redirect('/results')
+    res.redirect('/after-q1')
   }
 })
