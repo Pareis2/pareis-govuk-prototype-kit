@@ -16,28 +16,13 @@
           <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
-              {{ govukRadios({
-                classes: "govuk-radios--inline",
-                idPrefix: "sixty-or-over",
-                name: "sixty-or-over",
-                fieldset: {
-                  legend: {
-                    text: "7. Is the case about ownership or possession of assets and/or financial provision?",
-                    isPageHeading: true,
-                    classes: "govuk-fieldset__legend--l"
-                  }
-                },
-                items: [
-                  {
-                    value: "yes",
-                    text: "Yes"
-                  },
-                  {
-                    value: "no",
-                    text: "No"
-                  }
-                ]
-              }) }}
+            <h1 class="govuk-heading-l">What is the case category?</h1>
+
+                {{ govukInput({
+
+                  id: "name",
+                  name: "name"
+                }) }}
 
 
 

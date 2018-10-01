@@ -8,7 +8,7 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
 
       <form action="after-q6.html" method="post">
@@ -18,22 +18,37 @@
 
 
 
-           <h1 class="govuk-heading-l">6. What is the case category?</h1>
+            {{ govukRadios({
+              classes: "govuk-radios--inline",
+              idPrefix: "means",
+              name: "means",
+              fieldset: {
+                legend: {
+                  text: "Is your client or their partner (whose means are to be aggregated) aged 60 or over?",
+                  isPageHeading: true,
+                  classes: "govuk-fieldset__legend--l"
+                }
+              },
 
-                  {{ govukInput({
+              items: [
+                {
+                  value: "yes",
+                  text: "Yes"
+                },
+                {
+                  value: "no",
+                  text: "No"
+                }
+              ]
+            }) }}
 
-                    id: "name",
-                    name: "name"
-                  }) }}
+
 
             {{ govukButton({
               text: "Next question",
               href: "after-q6.html",
               classes: "govuk-button--start"
             }) }}
-
-
-
 
           </main>
 
