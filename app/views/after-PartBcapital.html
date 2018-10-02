@@ -8,25 +8,21 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-three-quarters">
 
 
-      <form action="partBcapital-afterApril13.html" method="post">
+      <form action="#" method="post">
 
           <main class="govuk-main-wrapper " id="main-content" role="main">
+<h3 class="govuk-heading-l">PART B: Capital</h3>
 
 
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-full">
-
-              </div>
-            </div>
 
             <div class="govuk-grid-row">
-              <div class="govuk-grid-column-full">
+              <div class="govuk-grid-column-three-quarters">
                 <div>
                   <table class="govuk-table govuk-body govuk-!-margin-bottom-9">
-                    <caption class="govuk-table__caption">Please list any property, assets and possessions that the opponent has made a claim to in this case:</caption>
+                    <caption class="govuk-table__caption">Please list the client and partner's property, assets or possessions not included in Part A:</caption>
                     <thead class="govuk-table__head">
                       <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="col"> Property:</th>
@@ -82,55 +78,8 @@
                         <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="%"></td>
                       </tr>
                     </tbody>
+
                   </table>
-
-                  <table class="govuk-table">
-                    <thead class="govuk-table__head">
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="col">Other assets an d possessions claimed by the opponent:</th>
-                        <th class="govuk-table__header" scope="col"> Client and Partner</th>
-                        <td class="govuk-table__cell "></td>
-                        <td class="govuk-table__cell "></td>
-                        <td class="govuk-table__cell "></td>
-                      </tr>
-                    </thead>
-                    <tbody class="govuk-table__body">
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">Savings(bank, building society,etc)</th>
-                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
-                        <td class="govuk-table__cell ">
-                      </tr>
-
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">Investments (shares, insurance policies, etc)</th>
-                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
-                        <td class="govuk-table__cell "></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">Valuable items (boat, caravan, jewellary,etc)</th>
-                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
-                        <td class="govuk-table__cell "></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">Other capital (including money due to the client)</th>
-                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
-                        <td class="govuk-table__cell "></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                <tbody>
-                   <table class="govuk-table govuk-body govuk-!-margin-bottom-9">
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"  >TOTAL GROSS INCOME (Client and Partner) </th>
-                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
-                        <td class="govuk-table__cell "></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-
-
 
                 </div>
               </div>
@@ -138,8 +87,8 @@
 
 
             {{ govukButton({
-              text: "Next question",
-              href: "partBcapital-afterApril13.html",
+              text: "Next",
+              href: "after-PartBb-Capital.html",
               classes: "govuk-button--start"
             }) }}
 
@@ -152,6 +101,10 @@
 
 
     </div>
+    <div class="govuk-grid-column-one-quarter govuk-table__header--numeric">
+        <p class="govuk-body govuk-!-margin-bottom-6"></p>
+        <h3><a href="guidance#2F_007">View guidance</a></h3>
+      </div>
 </div>
 
 {% endblock %}
