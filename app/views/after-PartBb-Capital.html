@@ -1,0 +1,103 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="#" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+            <h3 class="govuk-heading-l">PART B: Capital continued</h3>
+            <h3><a href="guidance#2F_007">View guidance</a></h3>
+
+
+
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-three-quarters">
+                <div>
+
+                  <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Other assets an d possessions claimed by the opponent:</th>
+                        <th class="govuk-table__header" scope="col"> Client and Partner</th>
+                        <td class="govuk-table__cell "></td>
+                        <td class="govuk-table__cell "></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Savings(bank, building society,etc)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell ">
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Investments (shares, insurance policies, etc)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Valuable items (boat, caravan, jewellary,etc)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input govuk-input--width-10" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">Other capital (including money due to the client)</th>
+                        <td class="govuk-table__cell "><input class="govuk-input govuk-input--width-10" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                <tbody>
+                   <table class="govuk-table govuk-body govuk-!-margin-bottom-10">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"> Total Part A capital </th>
+                        <td class="govuk-table__cell "><input class="govuk-input govuk-input--width-10" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"> Total Part B capital </th>
+                        <td class="govuk-table__cell "><input class="govuk-input govuk-input--width-10" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header govuk-table__header govuk-table__header--numeric" scope="row"> Total of all Capital assets (Part A and Part B) </th>
+                        <td class="govuk-table__cell "><input class="govuk-input govuk-input--width-10" id="name" name="name" type="text" value="£"></td>
+                        <td class="govuk-table__cell "></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+
+            {{ govukButton({
+              text: "Submit",
+              href: "results.html",
+              classes: "govuk-button--start"
+            }) }}
+
+          </main>
+
+      </form>
+
+    </div>
+    <div class="govuk-grid-column-one-third govuk-table__header--numeric">
+        <p class="govuk-body govuk-!-margin-bottom-6"></p>
+        <h3><a href="guidance#2F_007">View guidance</a></h3>
+      </div>
+</div>
+
+{% endblock %}
