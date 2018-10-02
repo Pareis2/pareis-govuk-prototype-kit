@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK - Civil Eligibility Calculator
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+      <form action="before-q2.html" method="post">
+
+          <main class="govuk-main-wrapper " id="main-content" role="main">
+
+
+
+            {{ govukCheckboxes({
+            idPrefix: "case-legal-help",
+            name: "legal-help",
+            fieldset: {
+            legend: {
+              text: "What level of legal help does the client require:",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--xl"
+            }
+            },
+            hint: {
+            text: "Select all that apply."
+            },
+            items: [
+            {
+              value: "Immigration",
+              text: "Immigration matters only:",
+              hint: {
+                text: "Legal Representation before the Asylum and Immigration Tribunal; and the High Court in respect of an application under section 103A of the Nationality, Immigration and Asylum Act 2002 (Controlled Legal Representation)"
+              }
+            },
+            {
+              value: "Domestic",
+              text: "Domestic abuse:",
+              hint: {
+                text: "Legal Representation for proceedings where the client seeks an injunction or other order for protection from harm to the person, or committal for breach of any such order"
+              }
+            },
+            {
+              value: "Other",
+              text: "Farm or agricultural waste",
+              hint: {
+                text: "Legal Help, Help at Court, Family Mediation, Family Help (Lower), Family Help (Higher), Controlled Legal Representation (Asylum matters only), other Legal Representation"
+              }
+            }
+            ]
+            }) }}
+
+            {{ govukButton({
+              text: "Next question",
+              href: "before-q2.html",
+              classes: "govuk-button--start"
+            }) }}
+
+
+
+
+          </main>
+
+      </form>
+
+
+    </div>
+</div>
+
+{% endblock %}
